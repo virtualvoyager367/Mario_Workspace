@@ -8,10 +8,10 @@
       "registry_name": "pipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/mario_craft/loot_tables/blocks/pipe.json",
-          "src/main/resources/assets/mario_craft/models/item/pipe.json",
           "src/main/resources/assets/mario_craft/blockstates/pipe.json",
           "src/main/java/net/mcreator/mariocraft/block/PipeBlock.java",
+          "src/main/resources/assets/mario_craft/models/item/pipe.json",
+          "src/main/resources/data/mario_craft/loot_tables/blocks/pipe.json",
           "src/main/resources/assets/mario_craft/models/block/pipe.json"
         ]
       }
@@ -24,16 +24,16 @@
       "registry_name": "question_mark",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mariocraft/block/renderer/QuestionMarkDisplayItemRenderer.java",
-          "src/main/java/net/mcreator/mariocraft/block/entity/QuestionMarkTileEntity.java",
           "src/main/java/net/mcreator/mariocraft/block/renderer/QuestionMarkTileRenderer.java",
           "src/main/java/net/mcreator/mariocraft/block/model/QuestionMarkBlockModel.java",
+          "src/main/java/net/mcreator/mariocraft/block/entity/QuestionMarkTileEntity.java",
+          "src/main/resources/assets/mario_craft/blockstates/question_mark.json",
+          "src/main/java/net/mcreator/mariocraft/block/QuestionMarkBlock.java",
           "src/main/java/net/mcreator/mariocraft/block/model/QuestionMarkDisplayModel.java",
           "src/main/java/net/mcreator/mariocraft/block/display/QuestionMarkDisplayItem.java",
-          "src/main/resources/assets/mario_craft/models/item/question_mark.json",
-          "src/main/java/net/mcreator/mariocraft/block/QuestionMarkBlock.java",
-          "src/main/resources/assets/mario_craft/blockstates/question_mark.json",
-          "src/main/resources/assets/mario_craft/models/custom/question_mark_particle.json"
+          "src/main/resources/assets/mario_craft/models/custom/question_mark_particle.json",
+          "src/main/java/net/mcreator/mariocraft/block/renderer/QuestionMarkDisplayItemRenderer.java",
+          "src/main/resources/assets/mario_craft/models/item/question_mark.json"
         ]
       }
     },
@@ -46,9 +46,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/mariocraft/entity/CoinEntity.java",
+          "src/main/java/net/mcreator/mariocraft/entity/model/CoinModel.java",
           "src/main/java/net/mcreator/mariocraft/client/renderer/CoinRenderer.java",
-          "src/main/resources/assets/mario_craft/models/item/coin_spawn_egg.json",
-          "src/main/java/net/mcreator/mariocraft/entity/model/CoinModel.java"
+          "src/main/resources/assets/mario_craft/models/item/coin_spawn_egg.json"
         ]
       }
     },
@@ -102,10 +102,10 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/mariocraft/block/BrickBlock.java",
-          "src/main/resources/assets/mario_craft/models/block/brick.json",
-          "src/main/resources/data/mario_craft/loot_tables/blocks/brick.json",
+          "src/main/resources/assets/mario_craft/models/item/brick.json",
           "src/main/resources/assets/mario_craft/blockstates/brick.json",
-          "src/main/resources/assets/mario_craft/models/item/brick.json"
+          "src/main/resources/data/mario_craft/loot_tables/blocks/brick.json",
+          "src/main/resources/assets/mario_craft/models/block/brick.json"
         ]
       }
     },
@@ -188,10 +188,10 @@
       "registry_name": "purple_coin",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mariocraft/entity/model/PurpleCoinModel.java",
           "src/main/resources/assets/mario_craft/models/item/purple_coin_spawn_egg.json",
-          "src/main/java/net/mcreator/mariocraft/entity/PurpleCoinEntity.java",
-          "src/main/java/net/mcreator/mariocraft/client/renderer/PurpleCoinRenderer.java"
+          "src/main/java/net/mcreator/mariocraft/entity/model/PurpleCoinModel.java",
+          "src/main/java/net/mcreator/mariocraft/client/renderer/PurpleCoinRenderer.java",
+          "src/main/java/net/mcreator/mariocraft/entity/PurpleCoinEntity.java"
         ]
       }
     },
@@ -203,8 +203,8 @@
       "registry_name": "icon",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mariocraft/item/IconItem.java",
-          "src/main/resources/assets/mario_craft/models/item/icon.json"
+          "src/main/resources/assets/mario_craft/models/item/icon.json",
+          "src/main/java/net/mcreator/mariocraft/item/IconItem.java"
         ]
       }
     },
