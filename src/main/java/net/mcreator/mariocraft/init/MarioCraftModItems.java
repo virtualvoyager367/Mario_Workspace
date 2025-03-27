@@ -25,6 +25,7 @@ public class MarioCraftModItems {
 	public static final RegistryObject<Item> BRICK = block(MarioCraftModBlocks.BRICK);
 	public static final RegistryObject<Item> PURPLE_COIN_SPAWN_EGG = REGISTRY.register("purple_coin_spawn_egg", () -> new ForgeSpawnEggItem(MarioCraftModEntities.PURPLE_COIN, -3407617, -6736897, new Item.Properties()));
 	public static final RegistryObject<Item> ICON = REGISTRY.register("icon", () -> new IconItem());
+	public static final RegistryObject<Item> QUESTION_MARK_COLLECTED = block(MarioCraftModBlocks.QUESTION_MARK_COLLECTED);
 
 	// Start of user code block custom items
 	// End of user code block custom items

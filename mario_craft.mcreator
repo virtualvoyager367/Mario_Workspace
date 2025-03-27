@@ -267,6 +267,22 @@
           }
         ]
       }
+    },
+    {
+      "name": "QuestionMarkCollected",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "question_mark_collected",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mario_craft/loot_tables/blocks/question_mark_collected.json",
+          "src/main/resources/assets/mario_craft/blockstates/question_mark_collected.json",
+          "src/main/resources/assets/mario_craft/models/block/question_mark_collected.json",
+          "src/main/resources/assets/mario_craft/models/item/question_mark_collected.json",
+          "src/main/java/net/mcreator/mariocraft/block/QuestionMarkCollectedBlock.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -312,6 +328,7 @@
       "block.mario_craft.question_mark": "Question Mark",
       "item.mario_craft.coin_spawn_egg": "Coin Spawn Egg",
       "item.mario_craft.purple_coin_spawn_egg": "Purple Coin Spawn Egg",
+      "block.mario_craft.question_mark_collected": "Question Mark Collected",
       "entity.mario_craft.purple_coin": "Purple Coin"
     }
   },

@@ -8,5 +8,6 @@
   "block.mario_craft.question_mark": "Question Mark",
   "item.mario_craft.coin_spawn_egg": "Coin Spawn Egg",
   "item.mario_craft.purple_coin_spawn_egg": "Purple Coin Spawn Egg",
+  "block.mario_craft.question_mark_collected": "Question Mark Collected",
   "entity.mario_craft.purple_coin": "Purple Coin"
 }

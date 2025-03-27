@@ -1,0 +1,9 @@
+{
+  "parent": "mario_craft:custom/qustion_mark_block_coin_collected",
+  "textures": {
+    "all": "mario_craft:block/mario_5",
+    "particle": "mario_craft:block/mario_5",
+    "0": "mario_craft:block/mario_5"
+  },
+  "render_type": "solid"
+}
