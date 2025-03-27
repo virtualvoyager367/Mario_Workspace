@@ -1,0 +1,799 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.qustion mark block - Converted",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "block",
+					"pivot": [8, 0, -8],
+					"cubes": [
+						{
+							"origin": [-8, 0, -8],
+							"size": [16, 16, 16],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16]},
+								"east": {"uv": [0, 16], "uv_size": [16, 16]},
+								"south": {"uv": [16, 0], "uv_size": [16, 16]},
+								"west": {"uv": [16, 16], "uv_size": [16, 16]},
+								"up": {"uv": [0, 32], "uv_size": [16, 16]},
+								"down": {"uv": [32, 16], "uv_size": [16, -16]}
+							}
+						}
+					]
+				},
+				{
+					"name": "mario4",
+					"pivot": [1, 6, 8]
+				},
+				{
+					"name": "boom7",
+					"parent": "mario4",
+					"pivot": [-8, 6, 0],
+					"cubes": [
+						{
+							"origin": [-9, 6, -3],
+							"size": [1, 7, 1],
+							"uv": {
+								"north": {"uv": [33, 23], "uv_size": [1, 7]},
+								"east": {"uv": [33, 30], "uv_size": [1, 7]},
+								"south": {"uv": [34, 16], "uv_size": [1, 7]},
+								"west": {"uv": [34, 23], "uv_size": [1, 7]},
+								"up": {"uv": [45, 42], "uv_size": [1, 1]},
+								"down": {"uv": [43, 46], "uv_size": [1, -1]}
+							}
+						}
+					]
+				},
+				{
+					"name": "boom6",
+					"parent": "mario4",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-9, 6, -2],
+							"size": [1, 7, 1],
+							"uv": {
+								"north": {"uv": [30, 32], "uv_size": [1, 7]},
+								"east": {"uv": [32, 30], "uv_size": [1, 7]},
+								"south": {"uv": [31, 32], "uv_size": [1, 7]},
+								"west": {"uv": [33, 16], "uv_size": [1, 7]},
+								"up": {"uv": [45, 40], "uv_size": [1, 1]},
+								"down": {"uv": [41, 46], "uv_size": [1, -1]}
+							}
+						}
+					]
+				},
+				{
+					"name": "bone5",
+					"parent": "mario4",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-9, 3, -1],
+							"size": [1, 2, 1],
+							"uv": {
+								"north": {"uv": [27, 43], "uv_size": [1, 2]},
+								"east": {"uv": [28, 43], "uv_size": [1, 2]},
+								"south": {"uv": [43, 28], "uv_size": [1, 2]},
+								"west": {"uv": [29, 43], "uv_size": [1, 2]},
+								"up": {"uv": [45, 43], "uv_size": [1, 1]},
+								"down": {"uv": [44, 46], "uv_size": [1, -1]}
+							}
+						},
+						{
+							"origin": [-9, 6, -1],
+							"size": [1, 2, 1],
+							"uv": {
+								"north": {"uv": [43, 24], "uv_size": [1, 2]},
+								"east": {"uv": [25, 43], "uv_size": [1, 2]},
+								"south": {"uv": [26, 43], "uv_size": [1, 2]},
+								"west": {"uv": [43, 26], "uv_size": [1, 2]},
+								"up": {"uv": [45, 41], "uv_size": [1, 1]},
+								"down": {"uv": [42, 46], "uv_size": [1, -1]}
+							}
+						},
+						{
+							"origin": [-9, 11, -1],
+							"size": [1, 2, 1],
+							"uv": {
+								"north": {"uv": [43, 16], "uv_size": [1, 2]},
+								"east": {"uv": [17, 43], "uv_size": [1, 2]},
+								"south": {"uv": [18, 43], "uv_size": [1, 2]},
+								"west": {"uv": [43, 18], "uv_size": [1, 2]},
+								"up": {"uv": [36, 45], "uv_size": [1, 1]},
+								"down": {"uv": [45, 37], "uv_size": [1, -1]}
+							}
+						}
+					]
+				},
+				{
+					"name": "bone4",
+					"parent": "mario4",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-9, 11, 0],
+							"size": [1, 2, 1],
+							"uv": {
+								"north": {"uv": [22, 43], "uv_size": [1, 2]},
+								"east": {"uv": [43, 22], "uv_size": [1, 2]},
+								"south": {"uv": [23, 43], "uv_size": [1, 2]},
+								"west": {"uv": [24, 43], "uv_size": [1, 2]},
+								"up": {"uv": [45, 39], "uv_size": [1, 1]},
+								"down": {"uv": [40, 46], "uv_size": [1, -1]}
+							}
+						},
+						{
+							"origin": [-9, 6, 0],
+							"size": [1, 2, 1],
+							"uv": {
+								"north": {"uv": [42, 40], "uv_size": [1, 2]},
+								"east": {"uv": [41, 42], "uv_size": [1, 2]},
+								"south": {"uv": [42, 42], "uv_size": [1, 2]},
+								"west": {"uv": [16, 43], "uv_size": [1, 2]},
+								"up": {"uv": [34, 45], "uv_size": [1, 1]},
+								"down": {"uv": [45, 35], "uv_size": [1, -1]}
+							}
+						},
+						{
+							"origin": [-9, 3, 0],
+							"size": [1, 2, 1],
+							"uv": {
+								"north": {"uv": [38, 42], "uv_size": [1, 2]},
+								"east": {"uv": [42, 38], "uv_size": [1, 2]},
+								"south": {"uv": [39, 42], "uv_size": [1, 2]},
+								"west": {"uv": [40, 42], "uv_size": [1, 2]},
+								"up": {"uv": [33, 45], "uv_size": [1, 1]},
+								"down": {"uv": [45, 34], "uv_size": [1, -1]}
+							}
+						}
+					]
+				},
+				{
+					"name": "boom3",
+					"parent": "mario4",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-9, 11, 1],
+							"size": [1, 2, 1],
+							"uv": {
+								"north": {"uv": [19, 43], "uv_size": [1, 2]},
+								"east": {"uv": [20, 43], "uv_size": [1, 2]},
+								"south": {"uv": [43, 20], "uv_size": [1, 2]},
+								"west": {"uv": [21, 43], "uv_size": [1, 2]},
+								"up": {"uv": [45, 38], "uv_size": [1, 1]},
+								"down": {"uv": [39, 46], "uv_size": [1, -1]}
+							}
+						}
+					]
+				},
+				{
+					"name": "boom2",
+					"parent": "mario4",
+					"pivot": [-8, 6, 0],
+					"cubes": [
+						{
+							"origin": [-9, 9, 2],
+							"size": [1, 4, 1],
+							"uv": {
+								"north": {"uv": [20, 39], "uv_size": [1, 4]},
+								"east": {"uv": [39, 20], "uv_size": [1, 4]},
+								"south": {"uv": [21, 39], "uv_size": [1, 4]},
+								"west": {"uv": [22, 39], "uv_size": [1, 4]},
+								"up": {"uv": [37, 45], "uv_size": [1, 1]},
+								"down": {"uv": [45, 38], "uv_size": [1, -1]}
+							}
+						}
+					]
+				},
+				{
+					"name": "boooooom",
+					"parent": "mario4",
+					"pivot": [-8, 6, 0],
+					"cubes": [
+						{
+							"origin": [-9, 9, 3],
+							"size": [1, 4, 1],
+							"uv": {
+								"north": {"uv": [39, 16], "uv_size": [1, 4]},
+								"east": {"uv": [17, 39], "uv_size": [1, 4]},
+								"south": {"uv": [18, 39], "uv_size": [1, 4]},
+								"west": {"uv": [19, 39], "uv_size": [1, 4]},
+								"up": {"uv": [35, 45], "uv_size": [1, 1]},
+								"down": {"uv": [45, 36], "uv_size": [1, -1]}
+							}
+						}
+					]
+				},
+				{
+					"name": "mario2",
+					"pivot": [0, 7, -9],
+					"rotation": [0, -90, 0]
+				},
+				{
+					"name": "boom4",
+					"parent": "mario2",
+					"pivot": [1, 6, -9],
+					"cubes": [
+						{
+							"origin": [0, 6, -12],
+							"size": [1, 7, 1],
+							"uv": {
+								"north": {"uv": [33, 23], "uv_size": [1, 7]},
+								"east": {"uv": [33, 30], "uv_size": [1, 7]},
+								"south": {"uv": [34, 16], "uv_size": [1, 7]},
+								"west": {"uv": [34, 23], "uv_size": [1, 7]},
+								"up": {"uv": [45, 42], "uv_size": [1, 1]},
+								"down": {"uv": [43, 46], "uv_size": [1, -1]}
+							}
+						}
+					]
+				},
+				{
+					"name": "boom5",
+					"parent": "mario2",
+					"pivot": [9, 0, -9],
+					"cubes": [
+						{
+							"origin": [0, 6, -11],
+							"size": [1, 7, 1],
+							"uv": {
+								"north": {"uv": [30, 32], "uv_size": [1, 7]},
+								"east": {"uv": [32, 30], "uv_size": [1, 7]},
+								"south": {"uv": [31, 32], "uv_size": [1, 7]},
+								"west": {"uv": [33, 16], "uv_size": [1, 7]},
+								"up": {"uv": [45, 40], "uv_size": [1, 1]},
+								"down": {"uv": [41, 46], "uv_size": [1, -1]}
+							}
+						}
+					]
+				},
+				{
+					"name": "bone2",
+					"parent": "mario2",
+					"pivot": [9, 0, -9],
+					"cubes": [
+						{
+							"origin": [0, 3, -10],
+							"size": [1, 2, 1],
+							"uv": {
+								"north": {"uv": [27, 43], "uv_size": [1, 2]},
+								"east": {"uv": [28, 43], "uv_size": [1, 2]},
+								"south": {"uv": [43, 28], "uv_size": [1, 2]},
+								"west": {"uv": [29, 43], "uv_size": [1, 2]},
+								"up": {"uv": [45, 43], "uv_size": [1, 1]},
+								"down": {"uv": [44, 46], "uv_size": [1, -1]}
+							}
+						},
+						{
+							"origin": [0, 6, -10],
+							"size": [1, 2, 1],
+							"uv": {
+								"north": {"uv": [43, 24], "uv_size": [1, 2]},
+								"east": {"uv": [25, 43], "uv_size": [1, 2]},
+								"south": {"uv": [26, 43], "uv_size": [1, 2]},
+								"west": {"uv": [43, 26], "uv_size": [1, 2]},
+								"up": {"uv": [45, 41], "uv_size": [1, 1]},
+								"down": {"uv": [42, 46], "uv_size": [1, -1]}
+							}
+						},
+						{
+							"origin": [0, 11, -10],
+							"size": [1, 2, 1],
+							"uv": {
+								"north": {"uv": [43, 16], "uv_size": [1, 2]},
+								"east": {"uv": [17, 43], "uv_size": [1, 2]},
+								"south": {"uv": [18, 43], "uv_size": [1, 2]},
+								"west": {"uv": [43, 18], "uv_size": [1, 2]},
+								"up": {"uv": [36, 45], "uv_size": [1, 1]},
+								"down": {"uv": [45, 37], "uv_size": [1, -1]}
+							}
+						}
+					]
+				},
+				{
+					"name": "bone3",
+					"parent": "mario2",
+					"pivot": [9, 0, -9],
+					"cubes": [
+						{
+							"origin": [0, 11, -9],
+							"size": [1, 2, 1],
+							"uv": {
+								"north": {"uv": [22, 43], "uv_size": [1, 2]},
+								"east": {"uv": [43, 22], "uv_size": [1, 2]},
+								"south": {"uv": [23, 43], "uv_size": [1, 2]},
+								"west": {"uv": [24, 43], "uv_size": [1, 2]},
+								"up": {"uv": [45, 39], "uv_size": [1, 1]},
+								"down": {"uv": [40, 46], "uv_size": [1, -1]}
+							}
+						},
+						{
+							"origin": [0, 6, -9],
+							"size": [1, 2, 1],
+							"uv": {
+								"north": {"uv": [42, 40], "uv_size": [1, 2]},
+								"east": {"uv": [41, 42], "uv_size": [1, 2]},
+								"south": {"uv": [42, 42], "uv_size": [1, 2]},
+								"west": {"uv": [16, 43], "uv_size": [1, 2]},
+								"up": {"uv": [34, 45], "uv_size": [1, 1]},
+								"down": {"uv": [45, 35], "uv_size": [1, -1]}
+							}
+						},
+						{
+							"origin": [0, 3, -9],
+							"size": [1, 2, 1],
+							"uv": {
+								"north": {"uv": [38, 42], "uv_size": [1, 2]},
+								"east": {"uv": [42, 38], "uv_size": [1, 2]},
+								"south": {"uv": [39, 42], "uv_size": [1, 2]},
+								"west": {"uv": [40, 42], "uv_size": [1, 2]},
+								"up": {"uv": [33, 45], "uv_size": [1, 1]},
+								"down": {"uv": [45, 34], "uv_size": [1, -1]}
+							}
+						}
+					]
+				},
+				{
+					"name": "boom8",
+					"parent": "mario2",
+					"pivot": [9, 0, -9],
+					"cubes": [
+						{
+							"origin": [0, 11, -8],
+							"size": [1, 2, 1],
+							"uv": {
+								"north": {"uv": [19, 43], "uv_size": [1, 2]},
+								"east": {"uv": [20, 43], "uv_size": [1, 2]},
+								"south": {"uv": [43, 20], "uv_size": [1, 2]},
+								"west": {"uv": [21, 43], "uv_size": [1, 2]},
+								"up": {"uv": [45, 38], "uv_size": [1, 1]},
+								"down": {"uv": [39, 46], "uv_size": [1, -1]}
+							}
+						}
+					]
+				},
+				{
+					"name": "boom9",
+					"parent": "mario2",
+					"pivot": [1, 6, -9],
+					"cubes": [
+						{
+							"origin": [0, 9, -7],
+							"size": [1, 4, 1],
+							"uv": {
+								"north": {"uv": [20, 39], "uv_size": [1, 4]},
+								"east": {"uv": [39, 20], "uv_size": [1, 4]},
+								"south": {"uv": [21, 39], "uv_size": [1, 4]},
+								"west": {"uv": [22, 39], "uv_size": [1, 4]},
+								"up": {"uv": [37, 45], "uv_size": [1, 1]},
+								"down": {"uv": [45, 38], "uv_size": [1, -1]}
+							}
+						}
+					]
+				},
+				{
+					"name": "boooooom2",
+					"parent": "mario2",
+					"pivot": [1, 6, -9],
+					"cubes": [
+						{
+							"origin": [0, 9, -6],
+							"size": [1, 4, 1],
+							"uv": {
+								"north": {"uv": [39, 16], "uv_size": [1, 4]},
+								"east": {"uv": [17, 39], "uv_size": [1, 4]},
+								"south": {"uv": [18, 39], "uv_size": [1, 4]},
+								"west": {"uv": [19, 39], "uv_size": [1, 4]},
+								"up": {"uv": [35, 45], "uv_size": [1, 1]},
+								"down": {"uv": [45, 36], "uv_size": [1, -1]}
+							}
+						}
+					]
+				},
+				{
+					"name": "mario5",
+					"pivot": [-8, 7, 14],
+					"rotation": [0, 87.5, 0]
+				},
+				{
+					"name": "boom14",
+					"parent": "mario5",
+					"pivot": [-8, 6, 14],
+					"cubes": [
+						{
+							"origin": [-2.65676, 6, 18.73067],
+							"size": [1, 7, 1],
+							"uv": {
+								"north": {"uv": [33, 23], "uv_size": [1, 7]},
+								"east": {"uv": [33, 30], "uv_size": [1, 7]},
+								"south": {"uv": [34, 16], "uv_size": [1, 7]},
+								"west": {"uv": [34, 23], "uv_size": [1, 7]},
+								"up": {"uv": [45, 42], "uv_size": [1, 1]},
+								"down": {"uv": [43, 46], "uv_size": [1, -1]}
+							}
+						}
+					]
+				},
+				{
+					"name": "boom15",
+					"parent": "mario5",
+					"pivot": [0, 0, 14],
+					"cubes": [
+						{
+							"origin": [-2.65676, 6, 19.73067],
+							"size": [1, 7, 1],
+							"uv": {
+								"north": {"uv": [30, 32], "uv_size": [1, 7]},
+								"east": {"uv": [32, 30], "uv_size": [1, 7]},
+								"south": {"uv": [31, 32], "uv_size": [1, 7]},
+								"west": {"uv": [33, 16], "uv_size": [1, 7]},
+								"up": {"uv": [45, 40], "uv_size": [1, 1]},
+								"down": {"uv": [41, 46], "uv_size": [1, -1]}
+							}
+						}
+					]
+				},
+				{
+					"name": "bone8",
+					"parent": "mario5",
+					"pivot": [0, 0, 14],
+					"cubes": [
+						{
+							"origin": [-2.65676, 3, 20.73067],
+							"size": [1, 2, 1],
+							"uv": {
+								"north": {"uv": [27, 43], "uv_size": [1, 2]},
+								"east": {"uv": [28, 43], "uv_size": [1, 2]},
+								"south": {"uv": [43, 28], "uv_size": [1, 2]},
+								"west": {"uv": [29, 43], "uv_size": [1, 2]},
+								"up": {"uv": [45, 43], "uv_size": [1, 1]},
+								"down": {"uv": [44, 46], "uv_size": [1, -1]}
+							}
+						},
+						{
+							"origin": [-2.65676, 6, 20.73067],
+							"size": [1, 2, 1],
+							"uv": {
+								"north": {"uv": [43, 24], "uv_size": [1, 2]},
+								"east": {"uv": [25, 43], "uv_size": [1, 2]},
+								"south": {"uv": [26, 43], "uv_size": [1, 2]},
+								"west": {"uv": [43, 26], "uv_size": [1, 2]},
+								"up": {"uv": [45, 41], "uv_size": [1, 1]},
+								"down": {"uv": [42, 46], "uv_size": [1, -1]}
+							}
+						},
+						{
+							"origin": [-2.65676, 11, 20.73067],
+							"size": [1, 2, 1],
+							"uv": {
+								"north": {"uv": [43, 16], "uv_size": [1, 2]},
+								"east": {"uv": [17, 43], "uv_size": [1, 2]},
+								"south": {"uv": [18, 43], "uv_size": [1, 2]},
+								"west": {"uv": [43, 18], "uv_size": [1, 2]},
+								"up": {"uv": [36, 45], "uv_size": [1, 1]},
+								"down": {"uv": [45, 37], "uv_size": [1, -1]}
+							}
+						}
+					]
+				},
+				{
+					"name": "bone9",
+					"parent": "mario5",
+					"pivot": [0, 0, 14],
+					"cubes": [
+						{
+							"origin": [-2.65676, 11, 21.73067],
+							"size": [1, 2, 1],
+							"uv": {
+								"north": {"uv": [22, 43], "uv_size": [1, 2]},
+								"east": {"uv": [43, 22], "uv_size": [1, 2]},
+								"south": {"uv": [23, 43], "uv_size": [1, 2]},
+								"west": {"uv": [24, 43], "uv_size": [1, 2]},
+								"up": {"uv": [45, 39], "uv_size": [1, 1]},
+								"down": {"uv": [40, 46], "uv_size": [1, -1]}
+							}
+						},
+						{
+							"origin": [-2.65676, 6, 21.73067],
+							"size": [1, 2, 1],
+							"uv": {
+								"north": {"uv": [42, 40], "uv_size": [1, 2]},
+								"east": {"uv": [41, 42], "uv_size": [1, 2]},
+								"south": {"uv": [42, 42], "uv_size": [1, 2]},
+								"west": {"uv": [16, 43], "uv_size": [1, 2]},
+								"up": {"uv": [34, 45], "uv_size": [1, 1]},
+								"down": {"uv": [45, 35], "uv_size": [1, -1]}
+							}
+						},
+						{
+							"origin": [-2.65676, 3, 21.73067],
+							"size": [1, 2, 1],
+							"uv": {
+								"north": {"uv": [38, 42], "uv_size": [1, 2]},
+								"east": {"uv": [42, 38], "uv_size": [1, 2]},
+								"south": {"uv": [39, 42], "uv_size": [1, 2]},
+								"west": {"uv": [40, 42], "uv_size": [1, 2]},
+								"up": {"uv": [33, 45], "uv_size": [1, 1]},
+								"down": {"uv": [45, 34], "uv_size": [1, -1]}
+							}
+						}
+					]
+				},
+				{
+					"name": "boom16",
+					"parent": "mario5",
+					"pivot": [0, 0, 14],
+					"cubes": [
+						{
+							"origin": [-2.65676, 11, 22.73067],
+							"size": [1, 2, 1],
+							"uv": {
+								"north": {"uv": [19, 43], "uv_size": [1, 2]},
+								"east": {"uv": [20, 43], "uv_size": [1, 2]},
+								"south": {"uv": [43, 20], "uv_size": [1, 2]},
+								"west": {"uv": [21, 43], "uv_size": [1, 2]},
+								"up": {"uv": [45, 38], "uv_size": [1, 1]},
+								"down": {"uv": [39, 46], "uv_size": [1, -1]}
+							}
+						}
+					]
+				},
+				{
+					"name": "boom17",
+					"parent": "mario5",
+					"pivot": [-8, 6, 14],
+					"cubes": [
+						{
+							"origin": [-2.65676, 9, 23.73067],
+							"size": [1, 4, 1],
+							"uv": {
+								"north": {"uv": [20, 39], "uv_size": [1, 4]},
+								"east": {"uv": [39, 20], "uv_size": [1, 4]},
+								"south": {"uv": [21, 39], "uv_size": [1, 4]},
+								"west": {"uv": [22, 39], "uv_size": [1, 4]},
+								"up": {"uv": [37, 45], "uv_size": [1, 1]},
+								"down": {"uv": [45, 38], "uv_size": [1, -1]}
+							}
+						}
+					]
+				},
+				{
+					"name": "boooooom4",
+					"parent": "mario5",
+					"pivot": [-8, 6, 14],
+					"cubes": [
+						{
+							"origin": [-2.65676, 9, 24.73067],
+							"size": [1, 4, 1],
+							"uv": {
+								"north": {"uv": [39, 16], "uv_size": [1, 4]},
+								"east": {"uv": [17, 39], "uv_size": [1, 4]},
+								"south": {"uv": [18, 39], "uv_size": [1, 4]},
+								"west": {"uv": [19, 39], "uv_size": [1, 4]},
+								"up": {"uv": [35, 45], "uv_size": [1, 1]},
+								"down": {"uv": [45, 36], "uv_size": [1, -1]}
+							}
+						}
+					]
+				},
+				{
+					"name": "mario3",
+					"pivot": [1, 6, -6]
+				},
+				{
+					"name": "boom10",
+					"parent": "mario3",
+					"pivot": [-8, 6, -14],
+					"cubes": [
+						{
+							"origin": [7, 6, -3],
+							"size": [1, 7, 1],
+							"pivot": [8, 6, 0],
+							"rotation": [-180, 0, 180],
+							"uv": {
+								"north": {"uv": [33, 23], "uv_size": [1, 7]},
+								"east": {"uv": [33, 30], "uv_size": [1, 7]},
+								"south": {"uv": [34, 16], "uv_size": [1, 7]},
+								"west": {"uv": [34, 23], "uv_size": [1, 7]},
+								"up": {"uv": [45, 42], "uv_size": [1, 1]},
+								"down": {"uv": [43, 46], "uv_size": [1, -1]}
+							}
+						}
+					]
+				},
+				{
+					"name": "boom11",
+					"parent": "mario3",
+					"pivot": [0, 0, -14],
+					"cubes": [
+						{
+							"origin": [7, 6, -2],
+							"size": [1, 7, 1],
+							"pivot": [8, 6, 0],
+							"rotation": [-180, 0, 180],
+							"uv": {
+								"north": {"uv": [30, 32], "uv_size": [1, 7]},
+								"east": {"uv": [32, 30], "uv_size": [1, 7]},
+								"south": {"uv": [31, 32], "uv_size": [1, 7]},
+								"west": {"uv": [33, 16], "uv_size": [1, 7]},
+								"up": {"uv": [45, 40], "uv_size": [1, 1]},
+								"down": {"uv": [41, 46], "uv_size": [1, -1]}
+							}
+						}
+					]
+				},
+				{
+					"name": "bone6",
+					"parent": "mario3",
+					"pivot": [0, 0, -14],
+					"cubes": [
+						{
+							"origin": [7, 3, -1],
+							"size": [1, 2, 1],
+							"pivot": [8, 6, 0],
+							"rotation": [-180, 0, 180],
+							"uv": {
+								"north": {"uv": [27, 43], "uv_size": [1, 2]},
+								"east": {"uv": [28, 43], "uv_size": [1, 2]},
+								"south": {"uv": [43, 28], "uv_size": [1, 2]},
+								"west": {"uv": [29, 43], "uv_size": [1, 2]},
+								"up": {"uv": [45, 43], "uv_size": [1, 1]},
+								"down": {"uv": [44, 46], "uv_size": [1, -1]}
+							}
+						},
+						{
+							"origin": [7, 6, -1],
+							"size": [1, 2, 1],
+							"pivot": [8, 6, 0],
+							"rotation": [-180, 0, 180],
+							"uv": {
+								"north": {"uv": [43, 24], "uv_size": [1, 2]},
+								"east": {"uv": [25, 43], "uv_size": [1, 2]},
+								"south": {"uv": [26, 43], "uv_size": [1, 2]},
+								"west": {"uv": [43, 26], "uv_size": [1, 2]},
+								"up": {"uv": [45, 41], "uv_size": [1, 1]},
+								"down": {"uv": [42, 46], "uv_size": [1, -1]}
+							}
+						},
+						{
+							"origin": [7, 11, -1],
+							"size": [1, 2, 1],
+							"pivot": [8, 6, 0],
+							"rotation": [-180, 0, 180],
+							"uv": {
+								"north": {"uv": [43, 16], "uv_size": [1, 2]},
+								"east": {"uv": [17, 43], "uv_size": [1, 2]},
+								"south": {"uv": [18, 43], "uv_size": [1, 2]},
+								"west": {"uv": [43, 18], "uv_size": [1, 2]},
+								"up": {"uv": [36, 45], "uv_size": [1, 1]},
+								"down": {"uv": [45, 37], "uv_size": [1, -1]}
+							}
+						}
+					]
+				},
+				{
+					"name": "bone7",
+					"parent": "mario3",
+					"pivot": [0, 0, -14],
+					"cubes": [
+						{
+							"origin": [7, 11, 0],
+							"size": [1, 2, 1],
+							"pivot": [8, 6, 0],
+							"rotation": [-180, 0, 180],
+							"uv": {
+								"north": {"uv": [22, 43], "uv_size": [1, 2]},
+								"east": {"uv": [43, 22], "uv_size": [1, 2]},
+								"south": {"uv": [23, 43], "uv_size": [1, 2]},
+								"west": {"uv": [24, 43], "uv_size": [1, 2]},
+								"up": {"uv": [45, 39], "uv_size": [1, 1]},
+								"down": {"uv": [40, 46], "uv_size": [1, -1]}
+							}
+						},
+						{
+							"origin": [7, 6, 0],
+							"size": [1, 2, 1],
+							"pivot": [8, 6, 0],
+							"rotation": [-180, 0, 180],
+							"uv": {
+								"north": {"uv": [42, 40], "uv_size": [1, 2]},
+								"east": {"uv": [41, 42], "uv_size": [1, 2]},
+								"south": {"uv": [42, 42], "uv_size": [1, 2]},
+								"west": {"uv": [16, 43], "uv_size": [1, 2]},
+								"up": {"uv": [34, 45], "uv_size": [1, 1]},
+								"down": {"uv": [45, 35], "uv_size": [1, -1]}
+							}
+						},
+						{
+							"origin": [7, 3, 0],
+							"size": [1, 2, 1],
+							"pivot": [8, 6, 0],
+							"rotation": [-180, 0, 180],
+							"uv": {
+								"north": {"uv": [38, 42], "uv_size": [1, 2]},
+								"east": {"uv": [42, 38], "uv_size": [1, 2]},
+								"south": {"uv": [39, 42], "uv_size": [1, 2]},
+								"west": {"uv": [40, 42], "uv_size": [1, 2]},
+								"up": {"uv": [33, 45], "uv_size": [1, 1]},
+								"down": {"uv": [45, 34], "uv_size": [1, -1]}
+							}
+						}
+					]
+				},
+				{
+					"name": "boom12",
+					"parent": "mario3",
+					"pivot": [0, 0, -14],
+					"cubes": [
+						{
+							"origin": [7, 11, 1],
+							"size": [1, 2, 1],
+							"pivot": [8, 6, 0],
+							"rotation": [-180, 0, 180],
+							"uv": {
+								"north": {"uv": [19, 43], "uv_size": [1, 2]},
+								"east": {"uv": [20, 43], "uv_size": [1, 2]},
+								"south": {"uv": [43, 20], "uv_size": [1, 2]},
+								"west": {"uv": [21, 43], "uv_size": [1, 2]},
+								"up": {"uv": [45, 38], "uv_size": [1, 1]},
+								"down": {"uv": [39, 46], "uv_size": [1, -1]}
+							}
+						}
+					]
+				},
+				{
+					"name": "boom13",
+					"parent": "mario3",
+					"pivot": [-8, 6, -14],
+					"cubes": [
+						{
+							"origin": [7, 9, 2],
+							"size": [1, 4, 1],
+							"pivot": [8, 6, 0],
+							"rotation": [-180, 0, 180],
+							"uv": {
+								"north": {"uv": [20, 39], "uv_size": [1, 4]},
+								"east": {"uv": [39, 20], "uv_size": [1, 4]},
+								"south": {"uv": [21, 39], "uv_size": [1, 4]},
+								"west": {"uv": [22, 39], "uv_size": [1, 4]},
+								"up": {"uv": [37, 45], "uv_size": [1, 1]},
+								"down": {"uv": [45, 38], "uv_size": [1, -1]}
+							}
+						}
+					]
+				},
+				{
+					"name": "boooooom3",
+					"parent": "mario3",
+					"pivot": [-8, 6, -14],
+					"cubes": [
+						{
+							"origin": [7, 9, 3],
+							"size": [1, 4, 1],
+							"pivot": [8, 6, 0],
+							"rotation": [-180, 0, 180],
+							"uv": {
+								"north": {"uv": [39, 16], "uv_size": [1, 4]},
+								"east": {"uv": [17, 39], "uv_size": [1, 4]},
+								"south": {"uv": [18, 39], "uv_size": [1, 4]},
+								"west": {"uv": [19, 39], "uv_size": [1, 4]},
+								"up": {"uv": [35, 45], "uv_size": [1, 1]},
+								"down": {"uv": [45, 36], "uv_size": [1, -1]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

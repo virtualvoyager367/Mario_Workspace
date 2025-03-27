@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "mario_craft:custom/question_mark_particle",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "mario_craft:custom/question_mark_particle"
+    },
+    "axis=z": {
+      "model": "mario_craft:custom/question_mark_particle",
+      "x": 90
+    }
+  }
+}

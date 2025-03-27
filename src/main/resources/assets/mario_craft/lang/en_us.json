@@ -1,0 +1,12 @@
+{
+  "block.mario_craft.brick": "Mario Brick",
+  "item.mario_craft.icon": "Icon",
+  "block.mario_craft.pipe": "Pipe",
+  "entity.mario_craft.coin": "Coin",
+  "item_group.mario_craft.mario_tab": "Mario Tab",
+  "subtitles.coin_sound": "Coin Collected",
+  "block.mario_craft.question_mark": "Question Mark",
+  "item.mario_craft.coin_spawn_egg": "Coin Spawn Egg",
+  "item.mario_craft.purple_coin_spawn_egg": "Purple Coin Spawn Egg",
+  "entity.mario_craft.purple_coin": "Purple Coin"
+}

@@ -1,0 +1,311 @@
+{
+  "mod_elements": [
+    {
+      "name": "Pipe",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mario_craft/loot_tables/blocks/pipe.json",
+          "src/main/resources/assets/mario_craft/models/item/pipe.json",
+          "src/main/resources/assets/mario_craft/blockstates/pipe.json",
+          "src/main/java/net/mcreator/mariocraft/block/PipeBlock.java",
+          "src/main/resources/assets/mario_craft/models/block/pipe.json"
+        ]
+      }
+    },
+    {
+      "name": "QuestionMark",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "question_mark",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mariocraft/block/renderer/QuestionMarkDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/mariocraft/block/entity/QuestionMarkTileEntity.java",
+          "src/main/java/net/mcreator/mariocraft/block/renderer/QuestionMarkTileRenderer.java",
+          "src/main/java/net/mcreator/mariocraft/block/model/QuestionMarkBlockModel.java",
+          "src/main/java/net/mcreator/mariocraft/block/model/QuestionMarkDisplayModel.java",
+          "src/main/java/net/mcreator/mariocraft/block/display/QuestionMarkDisplayItem.java",
+          "src/main/resources/assets/mario_craft/models/item/question_mark.json",
+          "src/main/java/net/mcreator/mariocraft/block/QuestionMarkBlock.java",
+          "src/main/resources/assets/mario_craft/blockstates/question_mark.json",
+          "src/main/resources/assets/mario_craft/models/custom/question_mark_particle.json"
+        ]
+      }
+    },
+    {
+      "name": "Coin",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mariocraft/entity/CoinEntity.java",
+          "src/main/java/net/mcreator/mariocraft/client/renderer/CoinRenderer.java",
+          "src/main/resources/assets/mario_craft/models/item/coin_spawn_egg.json",
+          "src/main/java/net/mcreator/mariocraft/entity/model/CoinModel.java"
+        ]
+      }
+    },
+    {
+      "name": "Coinbar",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coinbar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mariocraft/client/screens/CoinbarOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "CoinCalculation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coin_calculation",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/mariocraft/procedures/CoinCalculationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MarioTab",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mario_tab",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Brick",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mariocraft/block/BrickBlock.java",
+          "src/main/resources/assets/mario_craft/models/block/brick.json",
+          "src/main/resources/data/mario_craft/loot_tables/blocks/brick.json",
+          "src/main/resources/assets/mario_craft/blockstates/brick.json",
+          "src/main/resources/assets/mario_craft/models/item/brick.json"
+        ]
+      }
+    },
+    {
+      "name": "CoinCollision",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coin_collision",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mariocraft/procedures/CoinCollisionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PurpleCoinCollision",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_coin_collision",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mariocraft/procedures/PurpleCoinCollisionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PurpleCoinCalculation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_coin_calculation",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/mariocraft/procedures/PurpleCoinCalculationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PurpleCoin",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_coin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mariocraft/entity/model/PurpleCoinModel.java",
+          "src/main/resources/assets/mario_craft/models/item/purple_coin_spawn_egg.json",
+          "src/main/java/net/mcreator/mariocraft/entity/PurpleCoinEntity.java",
+          "src/main/java/net/mcreator/mariocraft/client/renderer/PurpleCoinRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "Icon",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "icon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mariocraft/item/IconItem.java",
+          "src/main/resources/assets/mario_craft/models/item/icon.json"
+        ]
+      }
+    },
+    {
+      "name": "QuestionMarkPlayAnimation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "question_mark_play_animation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mariocraft/procedures/QuestionMarkPlayAnimationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "CoinNumber",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "Grabbed_Coin",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "PurpleCoinNumber",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "coin_sound",
+      "files": [
+        "coin_sound"
+      ],
+      "category": "neutral",
+      "subtitle": "Coin Collected"
+    }
+  ],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "block.mario_craft.brick": "Mario Brick",
+      "item.mario_craft.icon": "Icon",
+      "block.mario_craft.pipe": "Pipe",
+      "entity.mario_craft.coin": "Coin",
+      "item_group.mario_craft.mario_tab": "Mario Tab",
+      "subtitles.coin_sound": "Coin Collected",
+      "block.mario_craft.question_mark": "Question Mark",
+      "item.mario_craft.coin_spawn_egg": "Coin Spawn Egg",
+      "item.mario_craft.purple_coin_spawn_egg": "Purple Coin Spawn Egg",
+      "entity.mario_craft.purple_coin": "Purple Coin"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "mario_craft",
+    "modName": "Mario Craft",
+    "version": "1.5.8",
+    "author": "Virtu, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.mariocraft"
+  },
+  "mcreatorVersion": 202400452410
+}

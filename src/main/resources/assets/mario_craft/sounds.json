@@ -1,0 +1,11 @@
+{
+  "coin_sound": {
+    "subtitle": "subtitles.coin_sound",
+    "sounds": [
+      {
+        "name": "mario_craft:coin_sound",
+        "stream": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "mario_craft:custom/brick",
+  "textures": {
+    "all": "mario_craft:block/brick",
+    "particle": "mario_craft:block/brick",
+    "0": "mario_craft:block/brick"
+  },
+  "render_type": "solid"
+}

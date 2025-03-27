@@ -1,0 +1,9 @@
+{
+  "parent": "mario_craft:custom/pipe_-_converted_-_converted",
+  "textures": {
+    "all": "mario_craft:block/pipe",
+    "particle": "mario_craft:block/pipe",
+    "0": "mario_craft:block/pipe"
+  },
+  "render_type": "solid"
+}
