@@ -14,8 +14,7 @@ public class QuestionMarkDropCoinProcedure {
 		if (CoinCollected == false) {
 			if (world instanceof ServerLevel _level)
 				_level.getServer().getCommands().performPrefixedCommand(
-						new CommandSourceStack(CommandSource.NULL, new Vec3(Math.round(x), (Math.round(y) + 1), Math.round(z)), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-						"summon mario_craft:coin");
+						new CommandSourceStack(CommandSource.NULL, new Vec3(Math.round(x), Math.round(y), Math.round(z)), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon mario_craft:coin");
 			CoinCollected = true;
 		}
 	}
