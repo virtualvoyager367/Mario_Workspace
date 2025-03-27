@@ -101,11 +101,11 @@
       "registry_name": "brick",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mariocraft/block/BrickBlock.java",
-          "src/main/resources/assets/mario_craft/models/block/brick.json",
-          "src/main/resources/data/mario_craft/loot_tables/blocks/brick.json",
           "src/main/resources/assets/mario_craft/blockstates/brick.json",
-          "src/main/resources/assets/mario_craft/models/item/brick.json"
+          "src/main/resources/data/mario_craft/loot_tables/blocks/brick.json",
+          "src/main/resources/assets/mario_craft/models/block/brick.json",
+          "src/main/resources/assets/mario_craft/models/item/brick.json",
+          "src/main/java/net/mcreator/mariocraft/block/BrickBlock.java"
         ]
       }
     },
