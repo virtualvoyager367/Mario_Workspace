@@ -1,10 +1,6 @@
 package net.mcreator.mariocraft.entity.model;
 
-import software.bernie.geckolib.model.GeoModel;
-
-import net.minecraft.resources.ResourceLocation;
-
-import net.mcreator.mariocraft.entity.CoinEntity;
+import software.bernie.geckolib.core.animation.AnimationState;
 
 public class CoinModel extends GeoModel<CoinEntity> {
 	@Override
