@@ -45,10 +45,10 @@
       "registry_name": "coin",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mariocraft/entity/CoinEntity.java",
+          "src/main/java/net/mcreator/mariocraft/entity/model/CoinModel.java",
           "src/main/java/net/mcreator/mariocraft/client/renderer/CoinRenderer.java",
-          "src/main/resources/assets/mario_craft/models/item/coin_spawn_egg.json",
-          "src/main/java/net/mcreator/mariocraft/entity/model/CoinModel.java"
+          "src/main/java/net/mcreator/mariocraft/entity/CoinEntity.java",
+          "src/main/resources/assets/mario_craft/models/item/coin_spawn_egg.json"
         ]
       }
     },
@@ -217,6 +217,36 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/mariocraft/procedures/QuestionMarkPlayAnimationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "QuestionMarkDropCoin",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "question_mark_drop_coin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mariocraft/procedures/QuestionMarkDropCoinProcedure.java"
         ],
         "dependencies": [
           {
