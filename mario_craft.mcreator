@@ -24,16 +24,16 @@
       "registry_name": "question_mark",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/mariocraft/block/renderer/QuestionMarkDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/mariocraft/block/entity/QuestionMarkTileEntity.java",
           "src/main/java/net/mcreator/mariocraft/block/renderer/QuestionMarkTileRenderer.java",
           "src/main/java/net/mcreator/mariocraft/block/model/QuestionMarkBlockModel.java",
-          "src/main/java/net/mcreator/mariocraft/block/entity/QuestionMarkTileEntity.java",
-          "src/main/resources/assets/mario_craft/blockstates/question_mark.json",
-          "src/main/java/net/mcreator/mariocraft/block/QuestionMarkBlock.java",
           "src/main/java/net/mcreator/mariocraft/block/model/QuestionMarkDisplayModel.java",
           "src/main/java/net/mcreator/mariocraft/block/display/QuestionMarkDisplayItem.java",
-          "src/main/resources/assets/mario_craft/models/custom/question_mark_particle.json",
-          "src/main/java/net/mcreator/mariocraft/block/renderer/QuestionMarkDisplayItemRenderer.java",
-          "src/main/resources/assets/mario_craft/models/item/question_mark.json"
+          "src/main/resources/assets/mario_craft/models/item/question_mark.json",
+          "src/main/java/net/mcreator/mariocraft/block/QuestionMarkBlock.java",
+          "src/main/resources/assets/mario_craft/blockstates/question_mark.json",
+          "src/main/resources/assets/mario_craft/models/custom/question_mark_particle.json"
         ]
       }
     },
