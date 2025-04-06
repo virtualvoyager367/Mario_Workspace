@@ -2,9 +2,9 @@
   "_fv": 73,
   "_type": "animatedentity",
   "definition": {
-    "mobName": "Coin",
+    "mobName": "Evilmushroom",
     "mobLabel": "",
-    "mobModelTexture": "mario_3.png",
+    "mobModelTexture": "texture.png",
     "mobModelGlowTexture": "",
     "visualScale": {
       "fixedValue": 1.0
@@ -13,18 +13,18 @@
       "fixedValue": 1.0
     },
     "entityDataEntries": [],
-    "modelWidth": 1.6,
+    "modelWidth": 0.6,
     "modelHeight": 1.8,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "stepHeight": 0.6,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -13261,
+      "value": -10092442,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -256,
+      "value": -13421569,
       "falpha": 0.0
     },
     "creativeTabs": [
@@ -42,7 +42,7 @@
       "value": ""
     },
     "equipmentHelmet": {
-      "value": ""
+      "value": "Items.LEATHER_BOOTS"
     },
     "equipmentBody": {
       "value": ""
@@ -54,28 +54,28 @@
       "value": ""
     },
     "mobBehaviourType": "Mob",
-    "mobCreatureType": "UNDEFINED",
+    "mobCreatureType": "UNDEAD",
     "attackStrength": 3,
-    "attackKnockback": 0.0,
+    "attackKnockback": 0.5,
     "knockbackResistance": 0.0,
     "movementSpeed": 0.3,
-    "armorBaseValue": 0.0,
+    "armorBaseValue": 0.30000000000000004,
     "trackingRange": 64,
-    "followRange": 16,
+    "followRange": 50,
     "health": 10,
     "xpAmount": 0,
     "waterMob": false,
-    "flyingMob": true,
+    "flyingMob": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "deathTime": 1,
+    "deathTime": 20,
     "lerp": 4,
-    "disableCollisions": true,
+    "disableCollisions": false,
     "ridable": false,
     "canControlForward": false,
     "canControlStrafe": false,
-    "immuneToFire": true,
+    "immuneToFire": false,
     "immuneToArrows": true,
     "immuneToFallDamage": true,
     "immuneToCactus": true,
@@ -98,36 +98,33 @@
       "value": "entity.generic.hurt"
     },
     "deathSound": {
-      "value": "CUSTOM:coin_sound"
+      "value": "entity.generic.death"
     },
     "stepSound": {
-      "value": ""
+      "value": "CUSTOM:boing1"
     },
     "raidCelebrationSound": {
       "value": ""
     },
-    "onPlayerCollidesWith": {
-      "name": "CoinCollision"
-    },
-    "hasAI": false,
+    "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"></block></xml>",
-    "model": "mario_coin.geo.json",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"875\" y=\"175\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field><next><block type=\"avoid_entity\"><field name=\"entity\">CUSTOM:Mushroom</field><field name=\"radius\">20</field><field name=\"farspeed\">1</field><field name=\"nearspeed\">1.2</field><field name=\"condition\">null,null</field><next><block type=\"move_indoors\"><field name=\"condition\">null,null</field><next><block type=\"doors_break\"><field name=\"condition\">null,null</field><next><block type=\"restrict_sun\"><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "model": "mushroom.geo.json",
     "groupName": "",
-    "animation1": "coin spin",
-    "animation2": "",
+    "animation1": "mushroom",
+    "animation2": "mushroom",
     "animation3": "",
     "animation4": "",
-    "animation5": "",
+    "animation5": "mushroom",
     "animation6": "",
     "animation7": "",
     "animation8": "",
     "animation9": "",
     "animation10": "",
-    "enable2": false,
+    "enable2": true,
     "enable3": false,
     "enable4": false,
-    "enable5": false,
+    "enable5": true,
     "enable6": false,
     "enable7": false,
     "enable8": false,
@@ -135,7 +132,7 @@
     "enable10": false,
     "breedable": false,
     "tameable": false,
-    "disableDeathRotation": true,
+    "disableDeathRotation": false,
     "headMovement": false,
     "eyeHeight": false,
     "breedTriggerItems": [],
@@ -157,12 +154,12 @@
       4,
       2
     ],
-    "spawnThisMob": false,
-    "doesDespawnWhenIdle": false,
+    "spawnThisMob": true,
+    "doesDespawnWhenIdle": true,
     "spawningProbability": 20,
     "mobSpawningType": "monster",
-    "minNumberOfMobsPerGroup": 4,
-    "maxNumberOfMobsPerGroup": 4,
+    "minNumberOfMobsPerGroup": 1,
+    "maxNumberOfMobsPerGroup": 5,
     "restrictionBiomes": [],
     "spawnInDungeons": false
   }

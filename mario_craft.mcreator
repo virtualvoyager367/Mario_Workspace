@@ -8,10 +8,10 @@
       "registry_name": "pipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/mario_craft/loot_tables/blocks/pipe.json",
-          "src/main/resources/assets/mario_craft/models/item/pipe.json",
           "src/main/resources/assets/mario_craft/blockstates/pipe.json",
           "src/main/java/net/mcreator/mariocraft/block/PipeBlock.java",
+          "src/main/resources/assets/mario_craft/models/item/pipe.json",
+          "src/main/resources/data/mario_craft/loot_tables/blocks/pipe.json",
           "src/main/resources/assets/mario_craft/models/block/pipe.json"
         ]
       }
@@ -24,16 +24,16 @@
       "registry_name": "question_mark",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mariocraft/block/renderer/QuestionMarkDisplayItemRenderer.java",
-          "src/main/java/net/mcreator/mariocraft/block/entity/QuestionMarkTileEntity.java",
           "src/main/java/net/mcreator/mariocraft/block/renderer/QuestionMarkTileRenderer.java",
           "src/main/java/net/mcreator/mariocraft/block/model/QuestionMarkBlockModel.java",
+          "src/main/java/net/mcreator/mariocraft/block/entity/QuestionMarkTileEntity.java",
+          "src/main/resources/assets/mario_craft/blockstates/question_mark.json",
+          "src/main/java/net/mcreator/mariocraft/block/QuestionMarkBlock.java",
           "src/main/java/net/mcreator/mariocraft/block/model/QuestionMarkDisplayModel.java",
           "src/main/java/net/mcreator/mariocraft/block/display/QuestionMarkDisplayItem.java",
-          "src/main/resources/assets/mario_craft/models/item/question_mark.json",
-          "src/main/java/net/mcreator/mariocraft/block/QuestionMarkBlock.java",
-          "src/main/resources/assets/mario_craft/blockstates/question_mark.json",
-          "src/main/resources/assets/mario_craft/models/custom/question_mark_particle.json"
+          "src/main/resources/assets/mario_craft/models/custom/question_mark_particle.json",
+          "src/main/java/net/mcreator/mariocraft/block/renderer/QuestionMarkDisplayItemRenderer.java",
+          "src/main/resources/assets/mario_craft/models/item/question_mark.json"
         ]
       }
     },
@@ -45,9 +45,9 @@
       "registry_name": "coin",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/mariocraft/entity/CoinEntity.java",
           "src/main/java/net/mcreator/mariocraft/entity/model/CoinModel.java",
           "src/main/java/net/mcreator/mariocraft/client/renderer/CoinRenderer.java",
-          "src/main/java/net/mcreator/mariocraft/entity/CoinEntity.java",
           "src/main/resources/assets/mario_craft/models/item/coin_spawn_egg.json"
         ]
       }
@@ -101,11 +101,11 @@
       "registry_name": "brick",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/mariocraft/block/BrickBlock.java",
+          "src/main/resources/assets/mario_craft/models/item/brick.json",
           "src/main/resources/assets/mario_craft/blockstates/brick.json",
           "src/main/resources/data/mario_craft/loot_tables/blocks/brick.json",
-          "src/main/resources/assets/mario_craft/models/block/brick.json",
-          "src/main/resources/assets/mario_craft/models/item/brick.json",
-          "src/main/java/net/mcreator/mariocraft/block/BrickBlock.java"
+          "src/main/resources/assets/mario_craft/models/block/brick.json"
         ]
       }
     },
@@ -188,10 +188,10 @@
       "registry_name": "purple_coin",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mariocraft/entity/model/PurpleCoinModel.java",
           "src/main/resources/assets/mario_craft/models/item/purple_coin_spawn_egg.json",
-          "src/main/java/net/mcreator/mariocraft/entity/PurpleCoinEntity.java",
-          "src/main/java/net/mcreator/mariocraft/client/renderer/PurpleCoinRenderer.java"
+          "src/main/java/net/mcreator/mariocraft/entity/model/PurpleCoinModel.java",
+          "src/main/java/net/mcreator/mariocraft/client/renderer/PurpleCoinRenderer.java",
+          "src/main/java/net/mcreator/mariocraft/entity/PurpleCoinEntity.java"
         ]
       }
     },
@@ -203,8 +203,8 @@
       "registry_name": "icon",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mariocraft/item/IconItem.java",
-          "src/main/resources/assets/mario_craft/models/item/icon.json"
+          "src/main/resources/assets/mario_craft/models/item/icon.json",
+          "src/main/java/net/mcreator/mariocraft/item/IconItem.java"
         ]
       }
     },
@@ -276,11 +276,85 @@
       "registry_name": "question_mark_collected",
       "metadata": {
         "files": [
-          "src/main/resources/data/mario_craft/loot_tables/blocks/question_mark_collected.json",
           "src/main/resources/assets/mario_craft/blockstates/question_mark_collected.json",
-          "src/main/resources/assets/mario_craft/models/block/question_mark_collected.json",
+          "src/main/resources/data/mario_craft/loot_tables/blocks/question_mark_collected.json",
           "src/main/resources/assets/mario_craft/models/item/question_mark_collected.json",
+          "src/main/resources/assets/mario_craft/models/block/question_mark_collected.json",
           "src/main/java/net/mcreator/mariocraft/block/QuestionMarkCollectedBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "Cointrail",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cointrail",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mario_craft/worldgen/template_pool/cointrail.json",
+          "src/main/resources/data/mario_craft/worldgen/structure_set/cointrail.json",
+          "src/main/resources/data/mario_craft/worldgen/structure/cointrail.json"
+        ]
+      }
+    },
+    {
+      "name": "Toad",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toad",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mariocraft/entity/model/ToadModel.java",
+          "src/main/java/net/mcreator/mariocraft/entity/ToadEntity.java",
+          "src/main/java/net/mcreator/mariocraft/client/renderer/ToadRenderer.java",
+          "src/main/resources/assets/mario_craft/models/item/toad_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "Mushroom",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mariocraft/entity/MushroomEntity.java",
+          "src/main/java/net/mcreator/mariocraft/entity/model/MushroomModel.java",
+          "src/main/java/net/mcreator/mariocraft/client/renderer/MushroomRenderer.java",
+          "src/main/resources/data/mario_craft/forge/biome_modifier/mushroom_biome_modifier.json",
+          "src/main/resources/assets/mario_craft/models/item/mushroom_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "Mushrom2",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushrom_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mariocraft/item/Mushrom2Item.java",
+          "src/main/resources/assets/mario_craft/models/item/mushrom_2.json"
+        ]
+      }
+    },
+    {
+      "name": "Evilmushroom",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "evilmushroom",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mariocraft/client/renderer/EvilmushroomRenderer.java",
+          "src/main/resources/data/mario_craft/forge/biome_modifier/evilmushroom_biome_modifier.json",
+          "src/main/java/net/mcreator/mariocraft/entity/EvilmushroomEntity.java",
+          "src/main/resources/assets/mario_craft/models/item/evilmushroom_spawn_egg.json",
+          "src/main/java/net/mcreator/mariocraft/entity/model/EvilmushroomModel.java"
         ]
       }
     }
@@ -313,23 +387,84 @@
       ],
       "category": "neutral",
       "subtitle": "Coin Collected"
+    },
+    {
+      "name": "toadsound",
+      "files": [
+        "toad-sound"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "toadsound2",
+      "files": [
+        "toad-sound-2"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "toadhurtsound",
+      "files": [
+        "toad-hurt-sound2"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "toaddeathsound",
+      "files": [
+        "toad-deth-sound3"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "boing",
+      "files": [
+        "boing_online-audio-converter.com"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "boing1",
+      "files": [
+        "boing1_online-audio-converter.com"
+      ],
+      "category": "neutral",
+      "subtitle": ""
     }
   ],
   "tag_elements": {},
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "block.mario_craft.brick": "Mario Brick",
-      "item.mario_craft.icon": "Icon",
-      "block.mario_craft.pipe": "Pipe",
+      "item.mario_craft.mushroom_spawn_egg": "Mushroom Spawn Egg",
+      "subtitles.toadsound2": "",
       "entity.mario_craft.coin": "Coin",
-      "item_group.mario_craft.mario_tab": "Mario Tab",
+      "item.mario_craft.mushrom_2": "Mushrom 2",
+      "subtitles.boing": "",
+      "entity.mario_craft.evilmushroom": "Evilmushroom",
+      "block.mario_craft.pipe": "Pipe",
+      "item.mario_craft.evilmushroom_spawn_egg": "Evilmushroom Spawn Egg",
+      "subtitles.boing1": "",
+      "entity.mario_craft.mushroom": "Mushroom",
       "subtitles.coin_sound": "Coin Collected",
       "block.mario_craft.question_mark": "Question Mark",
-      "item.mario_craft.coin_spawn_egg": "Coin Spawn Egg",
+      "entity.mario_craft.toad": "Toad",
+      "entity.mario_craft.purple_coin": "Purple Coin",
+      "item.mario_craft.toad_spawn_egg": "Toad Spawn Egg",
+      "block.mario_craft.brick": "Mario Brick",
       "item.mario_craft.purple_coin_spawn_egg": "Purple Coin Spawn Egg",
-      "block.mario_craft.question_mark_collected": "Question Mark Collected",
-      "entity.mario_craft.purple_coin": "Purple Coin"
+      "item.mario_craft.coin_spawn_egg": "Coin Spawn Egg",
+      "subtitles.toaddeathsound": "",
+      "item.mario_craft.icon": "Icon",
+      "subtitles.toadhurtsound": "",
+      "subtitles.toadsound": "",
+      "item_group.mario_craft.mario_tab": "Mario Tab",
+      "block.mario_craft.question_mark_collected": "Question Mark Collected"
     }
   },
   "foldersRoot": {

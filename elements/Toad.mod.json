@@ -2,9 +2,9 @@
   "_fv": 73,
   "_type": "animatedentity",
   "definition": {
-    "mobName": "Coin",
+    "mobName": "Toad",
     "mobLabel": "",
-    "mobModelTexture": "mario_3.png",
+    "mobModelTexture": "toad_2.png",
     "mobModelGlowTexture": "",
     "visualScale": {
       "fixedValue": 1.0
@@ -13,18 +13,18 @@
       "fixedValue": 1.0
     },
     "entityDataEntries": [],
-    "modelWidth": 1.6,
+    "modelWidth": 0.6,
     "modelHeight": 1.8,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "stepHeight": 0.6,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -13261,
+      "value": -65536,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -256,
+      "value": -1,
       "falpha": 0.0
     },
     "creativeTabs": [
@@ -58,47 +58,47 @@
     "attackStrength": 3,
     "attackKnockback": 0.0,
     "knockbackResistance": 0.0,
-    "movementSpeed": 0.3,
+    "movementSpeed": 0.25,
     "armorBaseValue": 0.0,
     "trackingRange": 64,
     "followRange": 16,
-    "health": 10,
+    "health": 15,
     "xpAmount": 0,
     "waterMob": false,
-    "flyingMob": true,
+    "flyingMob": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "deathTime": 1,
+    "deathTime": 20,
     "lerp": 4,
-    "disableCollisions": true,
+    "disableCollisions": false,
     "ridable": false,
-    "canControlForward": false,
+    "canControlForward": true,
     "canControlStrafe": false,
-    "immuneToFire": true,
-    "immuneToArrows": true,
-    "immuneToFallDamage": true,
-    "immuneToCactus": true,
-    "immuneToDrowning": true,
-    "immuneToLightning": true,
-    "immuneToPotions": true,
-    "immuneToPlayer": true,
-    "immuneToExplosion": true,
-    "immuneToTrident": true,
-    "immuneToAnvil": true,
-    "immuneToWither": true,
-    "immuneToDragonBreath": true,
+    "immuneToFire": false,
+    "immuneToArrows": false,
+    "immuneToFallDamage": false,
+    "immuneToCactus": false,
+    "immuneToDrowning": false,
+    "immuneToLightning": false,
+    "immuneToPotions": false,
+    "immuneToPlayer": false,
+    "immuneToExplosion": false,
+    "immuneToTrident": false,
+    "immuneToAnvil": false,
+    "immuneToWither": false,
+    "immuneToDragonBreath": false,
     "mobDrop": {
       "value": ""
     },
     "livingSound": {
-      "value": ""
+      "value": "CUSTOM:toadsound"
     },
     "hurtSound": {
-      "value": "entity.generic.hurt"
+      "value": "CUSTOM:toadhurtsound"
     },
     "deathSound": {
-      "value": "CUSTOM:coin_sound"
+      "value": "CUSTOM:toaddeathsound"
     },
     "stepSound": {
       "value": ""
@@ -106,16 +106,13 @@
     "raidCelebrationSound": {
       "value": ""
     },
-    "onPlayerCollidesWith": {
-      "name": "CoinCollision"
-    },
-    "hasAI": false,
+    "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"></block></xml>",
-    "model": "mario_coin.geo.json",
-    "groupName": "",
-    "animation1": "coin spin",
-    "animation2": "",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"48\" y=\"36\"><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"panic_when_attacked\"><field name=\"speed\">1.2</field><field name=\"condition\">null,null</field><next><block type=\"move_indoors\"><field name=\"condition\">null,null</field><next><block type=\"doors_open\"><field name=\"condition\">null,null</field><next><block type=\"doors_close\"><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "model": "toad23.geo.json",
+    "groupName": "head",
+    "animation1": "idel",
+    "animation2": "toadwalk",
     "animation3": "",
     "animation4": "",
     "animation5": "",
@@ -124,19 +121,19 @@
     "animation8": "",
     "animation9": "",
     "animation10": "",
-    "enable2": false,
+    "enable2": true,
     "enable3": false,
     "enable4": false,
     "enable5": false,
     "enable6": false,
-    "enable7": false,
+    "enable7": true,
     "enable8": false,
     "enable9": false,
     "enable10": false,
     "breedable": false,
     "tameable": false,
-    "disableDeathRotation": true,
-    "headMovement": false,
+    "disableDeathRotation": false,
+    "headMovement": true,
     "eyeHeight": false,
     "breedTriggerItems": [],
     "ranged": false,
@@ -149,18 +146,18 @@
     "height": 1.0,
     "attackRate": 7,
     "raidSpawnsCount": [
-      4,
-      3,
-      3,
-      4,
-      4,
-      4,
-      2
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ],
     "spawnThisMob": false,
     "doesDespawnWhenIdle": false,
     "spawningProbability": 20,
-    "mobSpawningType": "monster",
+    "mobSpawningType": "creature",
     "minNumberOfMobsPerGroup": 4,
     "maxNumberOfMobsPerGroup": 4,
     "restrictionBiomes": [],

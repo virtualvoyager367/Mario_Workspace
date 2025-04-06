@@ -1,0 +1,82 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.unknown",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "bone",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "rightarm",
+					"parent": "bone",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-2, 8, 4], "size": [3, 7, 3], "pivot": [0, 12, 0], "rotation": [0, 90, 0], "uv": [23, 37]}
+					]
+				},
+				{
+					"name": "rightleg",
+					"parent": "bone",
+					"pivot": [5, 0, 2],
+					"cubes": [
+						{"origin": [-3, 0, 0], "size": [5, 7, 4], "pivot": [0, 12, 0], "rotation": [0, 90, 0], "uv": [-1, 36]}
+					]
+				},
+				{
+					"name": "leftleg",
+					"parent": "bone",
+					"pivot": [1, 1, -2],
+					"cubes": [
+						{"origin": [-3, 0, -4], "size": [5, 7, 4], "pivot": [0, 12, 0], "rotation": [0, 90, 0], "uv": [35, 30]}
+					]
+				},
+				{
+					"name": "body",
+					"parent": "bone",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-3, 7, -4], "size": [5, 8, 8], "pivot": [0, 12, 0], "rotation": [0, 90, 0], "uv": [0, 17]}
+					]
+				},
+				{
+					"name": "leftarm",
+					"parent": "bone",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-2, 8, -7], "size": [3, 7, 3], "pivot": [0, 12, 0], "rotation": [0, 90, 0], "uv": [30, 0]}
+					]
+				},
+				{
+					"name": "head",
+					"parent": "bone",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "face",
+					"parent": "head",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-3, 15, -4], "size": [5, 5, 8], "pivot": [0, 12, 0], "rotation": [0, 90, 0], "uv": [26, 17]}
+					]
+				},
+				{
+					"name": "mushroomtop",
+					"parent": "head",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-4.98146, 19.53998, -5], "size": [10, 7, 10], "pivot": [0, 12, 0], "rotation": [-90, 82.5, -90], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

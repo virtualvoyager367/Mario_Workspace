@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "mario_craft:cointrail",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 5,
+    "separation": 2,
+    "salt": 308694771
+  }
+}

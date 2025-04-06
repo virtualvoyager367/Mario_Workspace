@@ -7,5 +7,53 @@
         "stream": false
       }
     ]
+  },
+  "toadsound": {
+    "sounds": [
+      {
+        "name": "mario_craft:toad-sound",
+        "stream": false
+      }
+    ]
+  },
+  "toadsound2": {
+    "sounds": [
+      {
+        "name": "mario_craft:toad-sound-2",
+        "stream": false
+      }
+    ]
+  },
+  "toadhurtsound": {
+    "sounds": [
+      {
+        "name": "mario_craft:toad-hurt-sound2",
+        "stream": false
+      }
+    ]
+  },
+  "toaddeathsound": {
+    "sounds": [
+      {
+        "name": "mario_craft:toad-deth-sound3",
+        "stream": false
+      }
+    ]
+  },
+  "boing": {
+    "sounds": [
+      {
+        "name": "mario_craft:boing_online-audio-converter.com",
+        "stream": false
+      }
+    ]
+  },
+  "boing1": {
+    "sounds": [
+      {
+        "name": "mario_craft:boing1_online-audio-converter.com",
+        "stream": false
+      }
+    ]
   }
 }

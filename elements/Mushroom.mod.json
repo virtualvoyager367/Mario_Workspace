@@ -2,9 +2,9 @@
   "_fv": 73,
   "_type": "animatedentity",
   "definition": {
-    "mobName": "Coin",
+    "mobName": "Mushroom",
     "mobLabel": "",
-    "mobModelTexture": "mario_3.png",
+    "mobModelTexture": "mario_mushroom.png",
     "mobModelGlowTexture": "",
     "visualScale": {
       "fixedValue": 1.0
@@ -13,18 +13,18 @@
       "fixedValue": 1.0
     },
     "entityDataEntries": [],
-    "modelWidth": 1.6,
+    "modelWidth": 0.6,
     "modelHeight": 1.8,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
-    "stepHeight": 0.6,
+    "stepHeight": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -13261,
+      "value": -1,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -256,
+      "value": -65536,
       "falpha": 0.0
     },
     "creativeTabs": [
@@ -58,36 +58,36 @@
     "attackStrength": 3,
     "attackKnockback": 0.0,
     "knockbackResistance": 0.0,
-    "movementSpeed": 0.3,
+    "movementSpeed": 0.0,
     "armorBaseValue": 0.0,
     "trackingRange": 64,
     "followRange": 16,
     "health": 10,
     "xpAmount": 0,
     "waterMob": false,
-    "flyingMob": true,
+    "flyingMob": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "deathTime": 1,
+    "deathTime": 20,
     "lerp": 4,
-    "disableCollisions": true,
+    "disableCollisions": false,
     "ridable": false,
     "canControlForward": false,
     "canControlStrafe": false,
-    "immuneToFire": true,
-    "immuneToArrows": true,
-    "immuneToFallDamage": true,
-    "immuneToCactus": true,
-    "immuneToDrowning": true,
-    "immuneToLightning": true,
-    "immuneToPotions": true,
-    "immuneToPlayer": true,
-    "immuneToExplosion": true,
-    "immuneToTrident": true,
-    "immuneToAnvil": true,
-    "immuneToWither": true,
-    "immuneToDragonBreath": true,
+    "immuneToFire": false,
+    "immuneToArrows": false,
+    "immuneToFallDamage": false,
+    "immuneToCactus": false,
+    "immuneToDrowning": false,
+    "immuneToLightning": false,
+    "immuneToPotions": false,
+    "immuneToPlayer": false,
+    "immuneToExplosion": false,
+    "immuneToTrident": false,
+    "immuneToAnvil": false,
+    "immuneToWither": false,
+    "immuneToDragonBreath": false,
     "mobDrop": {
       "value": ""
     },
@@ -98,7 +98,7 @@
       "value": "entity.generic.hurt"
     },
     "deathSound": {
-      "value": "CUSTOM:coin_sound"
+      "value": "entity.generic.death"
     },
     "stepSound": {
       "value": ""
@@ -106,15 +106,12 @@
     "raidCelebrationSound": {
       "value": ""
     },
-    "onPlayerCollidesWith": {
-      "name": "CoinCollision"
-    },
     "hasAI": false,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"></block></xml>",
-    "model": "mario_coin.geo.json",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"545\" y=\"-2\"></block></xml>",
+    "model": "mushroom.geo.json",
     "groupName": "",
-    "animation1": "coin spin",
+    "animation1": "mushroom",
     "animation2": "",
     "animation3": "",
     "animation4": "",
@@ -135,7 +132,7 @@
     "enable10": false,
     "breedable": false,
     "tameable": false,
-    "disableDeathRotation": true,
+    "disableDeathRotation": false,
     "headMovement": false,
     "eyeHeight": false,
     "breedTriggerItems": [],
@@ -157,10 +154,10 @@
       4,
       2
     ],
-    "spawnThisMob": false,
-    "doesDespawnWhenIdle": false,
+    "spawnThisMob": true,
+    "doesDespawnWhenIdle": true,
     "spawningProbability": 20,
-    "mobSpawningType": "monster",
+    "mobSpawningType": "creature",
     "minNumberOfMobsPerGroup": 4,
     "maxNumberOfMobsPerGroup": 4,
     "restrictionBiomes": [],

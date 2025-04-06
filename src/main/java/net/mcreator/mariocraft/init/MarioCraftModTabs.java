@@ -23,5 +23,8 @@ public class MarioCraftModTabs {
 				tabData.accept(MarioCraftModItems.COIN_SPAWN_EGG.get());
 				tabData.accept(MarioCraftModBlocks.BRICK.get().asItem());
 				tabData.accept(MarioCraftModItems.PURPLE_COIN_SPAWN_EGG.get());
+				tabData.accept(MarioCraftModItems.TOAD_SPAWN_EGG.get());
+				tabData.accept(MarioCraftModItems.MUSHROOM_SPAWN_EGG.get());
+				tabData.accept(MarioCraftModItems.EVILMUSHROOM_SPAWN_EGG.get());
 			}).build());
 }
