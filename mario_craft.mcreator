@@ -372,24 +372,6 @@
       }
     },
     {
-      "name": "Rottenburning",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "rottenburning",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mariocraft/procedures/RottenburningProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
       "name": "MushroomCollision",
       "type": "procedure",
       "compiles": true,
