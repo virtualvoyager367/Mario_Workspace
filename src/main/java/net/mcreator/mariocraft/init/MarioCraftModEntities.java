@@ -35,9 +35,7 @@ public class MarioCraftModEntities {
 
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<MushroomEntity>> MUSHROOM = register("mushroom",
-			EntityType.Builder.<MushroomEntity>of(MushroomEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MushroomEntity::new)
-
-					.sized(0.6f, 1.8f));
+			EntityType.Builder.<MushroomEntity>of(MushroomEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MushroomEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<EvilmushroomEntity>> EVILMUSHROOM = register("evilmushroom",
 			EntityType.Builder.<EvilmushroomEntity>of(EvilmushroomEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(EvilmushroomEntity::new)
 

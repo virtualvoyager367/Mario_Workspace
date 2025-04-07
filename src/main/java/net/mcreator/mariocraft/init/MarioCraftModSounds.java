@@ -22,4 +22,5 @@ public class MarioCraftModSounds {
 	public static final RegistryObject<SoundEvent> TOADDEATHSOUND = REGISTRY.register("toaddeathsound", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("mario_craft", "toaddeathsound")));
 	public static final RegistryObject<SoundEvent> BOING = REGISTRY.register("boing", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("mario_craft", "boing")));
 	public static final RegistryObject<SoundEvent> BOING1 = REGISTRY.register("boing1", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("mario_craft", "boing1")));
+	public static final RegistryObject<SoundEvent> MUSHROOMSOUND = REGISTRY.register("mushroomsound", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("mario_craft", "mushroomsound")));
 }

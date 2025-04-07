@@ -55,5 +55,13 @@
         "stream": false
       }
     ]
+  },
+  "mushroomsound": {
+    "sounds": [
+      {
+        "name": "mario_craft:mushroom_sound_online-audio-converter.com",
+        "stream": false
+      }
+    ]
   }
 }

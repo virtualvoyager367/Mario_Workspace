@@ -4,9 +4,10 @@
   "entity.mario_craft.coin": "Coin",
   "item.mario_craft.mushrom_2": "Mushrom 2",
   "subtitles.boing": "",
-  "entity.mario_craft.evilmushroom": "rotten mushroom",
+  "subtitles.mushroomsound": "",
+  "entity.mario_craft.evilmushroom": "Rotten mushroom",
   "block.mario_craft.pipe": "Pipe",
-  "item.mario_craft.evilmushroom_spawn_egg": "rotten mushroom Spawn Egg",
+  "item.mario_craft.evilmushroom_spawn_egg": "Rotten mushroom Spawn Egg",
   "subtitles.boing1": "",
   "item.mario_craft.rottenmushroom": "Rottenmushroom",
   "entity.mario_craft.mushroom": "Mushroom",
@@ -22,6 +23,6 @@
   "item.mario_craft.icon": "Icon",
   "subtitles.toadhurtsound": "",
   "subtitles.toadsound": "",
-  "item_group.mario_craft.mario_tab": "Mario Tab",
+  "item_group.mario_craft.mario_tab": "Mario craft",
   "block.mario_craft.question_mark_collected": "Question Mark Collected"
 }

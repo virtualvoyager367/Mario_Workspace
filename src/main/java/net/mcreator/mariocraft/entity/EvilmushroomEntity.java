@@ -125,7 +125,7 @@ public class EvilmushroomEntity extends Monster implements GeoEntity {
 		this.targetSelector.addGoal(8, new HurtByTargetGoal(this).setAlertOthers());
 		this.goalSelector.addGoal(9, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(10, new FloatGoal(this));
-		this.goalSelector.addGoal(11, new AvoidEntityGoal<>(this, MushroomEntity.class, (float) 20, 1, 1.2));
+		this.goalSelector.addGoal(11, new AvoidEntityGoal<>(this, MushroomEntity.class, (float) 9, 1, 1.2));
 		this.goalSelector.addGoal(12, new MoveBackToVillageGoal(this, 0.6, false));
 		this.goalSelector.addGoal(13, new BreakDoorGoal(this, e -> true));
 		this.targetSelector.addGoal(14, new NearestAttackableTargetGoal(this, Player.class, false, false));
@@ -259,7 +259,7 @@ public class EvilmushroomEntity extends Monster implements GeoEntity {
 	@Override
 	protected void tickDeath() {
 		++this.deathTime;
-		if (this.deathTime == 20) {
+		if (this.deathTime == 1) {
 			this.remove(EvilmushroomEntity.RemovalReason.KILLED);
 			this.dropExperience();
 		}

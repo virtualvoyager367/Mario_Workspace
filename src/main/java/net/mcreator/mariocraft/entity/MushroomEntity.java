@@ -15,8 +15,15 @@ import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.level.levelgen.Heightmap;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.projectile.ThrownPotion;
+import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
+import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
+import net.minecraft.world.entity.ai.goal.LookAtPlayerGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnPlacements;
@@ -25,6 +32,9 @@ import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EntityDimensions;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.AreaEffectCloud;
+import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundEvent;
@@ -35,7 +45,9 @@ import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.core.BlockPos;
 
+import net.mcreator.mariocraft.procedures.MushroomCollisionProcedure;
 import net.mcreator.mariocraft.init.MarioCraftModEntities;
 
 public class MushroomEntity extends Monster implements GeoEntity {
@@ -55,8 +67,8 @@ public class MushroomEntity extends Monster implements GeoEntity {
 	public MushroomEntity(EntityType<MushroomEntity> type, Level world) {
 		super(type, world);
 		xpReward = 0;
-		setNoAi(true);
-		setMaxUpStep(0f);
+		setNoAi(false);
+		setMaxUpStep(0.6f);
 	}
 
 	@Override
@@ -81,8 +93,21 @@ public class MushroomEntity extends Monster implements GeoEntity {
 	}
 
 	@Override
+	protected void registerGoals() {
+		super.registerGoals();
+		this.goalSelector.addGoal(1, new RandomStrollGoal(this, 0.8));
+		this.goalSelector.addGoal(2, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(3, new LookAtPlayerGoal(this, EvilmushroomEntity.class, (float) 9));
+	}
+
+	@Override
 	public MobType getMobType() {
 		return MobType.UNDEFINED;
+	}
+
+	@Override
+	public void playStepSound(BlockPos pos, BlockState blockIn) {
+		this.playSound(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("mario_craft:boing1")), 0.15f, 1);
 	}
 
 	@Override
@@ -92,7 +117,40 @@ public class MushroomEntity extends Monster implements GeoEntity {
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("mario_craft:mushroomsound"));
+	}
+
+	@Override
+	public boolean hurt(DamageSource source, float amount) {
+		if (source.is(DamageTypes.IN_FIRE))
+			return false;
+		if (source.getDirectEntity() instanceof AbstractArrow)
+			return false;
+		if (source.getDirectEntity() instanceof Player)
+			return false;
+		if (source.getDirectEntity() instanceof ThrownPotion || source.getDirectEntity() instanceof AreaEffectCloud)
+			return false;
+		if (source.is(DamageTypes.FALL))
+			return false;
+		if (source.is(DamageTypes.CACTUS))
+			return false;
+		if (source.is(DamageTypes.DROWN))
+			return false;
+		if (source.is(DamageTypes.LIGHTNING_BOLT))
+			return false;
+		if (source.is(DamageTypes.EXPLOSION))
+			return false;
+		if (source.is(DamageTypes.TRIDENT))
+			return false;
+		if (source.is(DamageTypes.FALLING_ANVIL))
+			return false;
+		if (source.is(DamageTypes.DRAGON_BREATH))
+			return false;
+		if (source.is(DamageTypes.WITHER))
+			return false;
+		if (source.is(DamageTypes.WITHER_SKULL))
+			return false;
+		return super.hurt(source, amount);
 	}
 
 	@Override
@@ -119,6 +177,25 @@ public class MushroomEntity extends Monster implements GeoEntity {
 		return super.getDimensions(p_33597_).scale((float) 1);
 	}
 
+	@Override
+	public void playerTouch(Player sourceentity) {
+		super.playerTouch(sourceentity);
+		MushroomCollisionProcedure.execute(this.level(), this, sourceentity);
+	}
+
+	@Override
+	public boolean isPushable() {
+		return false;
+	}
+
+	@Override
+	protected void doPush(Entity entityIn) {
+	}
+
+	@Override
+	protected void pushEntities() {
+	}
+
 	public static void init() {
 		SpawnPlacements.register(MarioCraftModEntities.MUSHROOM.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
 				(entityType, world, reason, pos, random) -> (world.getBlockState(pos.below()).is(BlockTags.ANIMALS_SPAWNABLE_ON) && world.getRawBrightness(pos, 0) > 8));
@@ -126,7 +203,7 @@ public class MushroomEntity extends Monster implements GeoEntity {
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 0);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
 		builder = builder.add(Attributes.MAX_HEALTH, 10);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
@@ -136,6 +213,14 @@ public class MushroomEntity extends Monster implements GeoEntity {
 
 	private PlayState movementPredicate(AnimationState event) {
 		if (this.animationprocedure.equals("empty")) {
+			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F))
+
+			) {
+				return event.setAndContinue(RawAnimation.begin().thenLoop("mushroom"));
+			}
+			if (this.isInWaterOrBubble()) {
+				return event.setAndContinue(RawAnimation.begin().thenLoop("mushroom"));
+			}
 			return event.setAndContinue(RawAnimation.begin().thenLoop("mushroom"));
 		}
 		return PlayState.STOP;
@@ -163,7 +248,7 @@ public class MushroomEntity extends Monster implements GeoEntity {
 	@Override
 	protected void tickDeath() {
 		++this.deathTime;
-		if (this.deathTime == 20) {
+		if (this.deathTime == 1) {
 			this.remove(MushroomEntity.RemovalReason.KILLED);
 			this.dropExperience();
 		}
