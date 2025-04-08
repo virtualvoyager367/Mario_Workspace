@@ -1,6 +1,20 @@
 
 package net.mcreator.mariocraft.client.renderer;
 
+import software.bernie.geckolib.renderer.GeoEntityRenderer;
+import software.bernie.geckolib.cache.object.BakedGeoModel;
+
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.renderer.entity.EntityRendererProvider;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.MultiBufferSource;
+
+import net.mcreator.mariocraft.entity.model.PermanentEvilMushroomModel;
+import net.mcreator.mariocraft.entity.PermanentEvilMushroomEntity;
+
+import com.mojang.blaze3d.vertex.VertexConsumer;
+import com.mojang.blaze3d.vertex.PoseStack;
+
 public class PermanentEvilMushroomRenderer extends GeoEntityRenderer<PermanentEvilMushroomEntity> {
 	public PermanentEvilMushroomRenderer(EntityRendererProvider.Context renderManager) {
 		super(renderManager, new PermanentEvilMushroomModel());
@@ -20,5 +34,4 @@ public class PermanentEvilMushroomRenderer extends GeoEntityRenderer<PermanentEv
 		this.scaleWidth = scale;
 		super.preRender(poseStack, entity, model, bufferSource, buffer, isReRender, partialTick, packedLight, packedOverlay, red, green, blue, alpha);
 	}
-
 }

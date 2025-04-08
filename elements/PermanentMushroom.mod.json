@@ -106,7 +106,7 @@
     "raidCelebrationSound": {
       "value": ""
     },
-    "onPlayerCollidesWith": {
+    "onRightClickedOn": {
       "name": "MushroomCollision"
     },
     "hasAI": true,
