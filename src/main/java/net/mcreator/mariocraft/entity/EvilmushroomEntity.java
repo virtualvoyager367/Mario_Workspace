@@ -25,7 +25,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
-import net.minecraft.world.entity.ai.goal.RestrictSunGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.MoveBackToVillageGoal;
@@ -105,7 +104,7 @@ public class EvilmushroomEntity extends Monster implements GeoEntity {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new RestrictSunGoal(this));
+		this.goalSelector.addGoal(1, new AvoidEntityGoal<>(this, MushroomEntity.class, (float) 9, 1, 1.2));
 		this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.2, false) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
@@ -125,10 +124,9 @@ public class EvilmushroomEntity extends Monster implements GeoEntity {
 		this.targetSelector.addGoal(8, new HurtByTargetGoal(this).setAlertOthers());
 		this.goalSelector.addGoal(9, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(10, new FloatGoal(this));
-		this.goalSelector.addGoal(11, new AvoidEntityGoal<>(this, MushroomEntity.class, (float) 9, 1, 1.2));
-		this.goalSelector.addGoal(12, new MoveBackToVillageGoal(this, 0.6, false));
-		this.goalSelector.addGoal(13, new BreakDoorGoal(this, e -> true));
-		this.targetSelector.addGoal(14, new NearestAttackableTargetGoal(this, Player.class, false, false));
+		this.goalSelector.addGoal(11, new MoveBackToVillageGoal(this, 0.6, false));
+		this.goalSelector.addGoal(12, new BreakDoorGoal(this, e -> true));
+		this.targetSelector.addGoal(13, new NearestAttackableTargetGoal(this, Player.class, false, false));
 	}
 
 	@Override

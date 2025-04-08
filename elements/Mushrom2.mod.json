@@ -4,10 +4,10 @@
   "definition": {
     "renderType": 0,
     "texture": "mushroomitem",
-    "customModelName": "Tool",
+    "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Mushrom",
+    "name": "Mushroom",
     "rarity": "UNCOMMON",
     "creativeTabs": [
       {
@@ -16,7 +16,7 @@
     ],
     "stackSize": 64,
     "enchantability": 0,
-    "useDuration": 0,
+    "useDuration": 5,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -35,7 +35,7 @@
       "fixedValue": false
     },
     "inventorySize": 9,
-    "inventoryStackSize": 64,
+    "inventoryStackSize": 32,
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
@@ -45,13 +45,13 @@
     "projectileDisableAmmoCheck": false,
     "isFood": true,
     "nutritionalValue": 20,
-    "saturation": 0.1,
+    "saturation": 0.7999999999999999,
     "eatResultItem": {
       "value": ""
     },
-    "isMeat": true,
+    "isMeat": false,
     "isAlwaysEdible": false,
-    "animation": "none",
+    "animation": "eat",
     "isMusicDisc": false,
     "musicDiscMusic": {
       "value": ""
