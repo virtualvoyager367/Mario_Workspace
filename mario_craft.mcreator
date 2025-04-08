@@ -321,10 +321,10 @@
       "registry_name": "mushroom",
       "metadata": {
         "files": [
-          "src/main/resources/data/mario_craft/forge/biome_modifier/mushroom_biome_modifier.json",
           "src/main/java/net/mcreator/mariocraft/entity/MushroomEntity.java",
           "src/main/java/net/mcreator/mariocraft/entity/model/MushroomModel.java",
           "src/main/java/net/mcreator/mariocraft/client/renderer/MushroomRenderer.java",
+          "src/main/resources/data/mario_craft/forge/biome_modifier/mushroom_biome_modifier.json",
           "src/main/resources/assets/mario_craft/models/item/mushroom_spawn_egg.json"
         ]
       }
@@ -351,9 +351,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/mariocraft/client/renderer/EvilmushroomRenderer.java",
-          "src/main/resources/assets/mario_craft/models/item/evilmushroom_spawn_egg.json",
           "src/main/resources/data/mario_craft/forge/biome_modifier/evilmushroom_biome_modifier.json",
           "src/main/java/net/mcreator/mariocraft/entity/EvilmushroomEntity.java",
+          "src/main/resources/assets/mario_craft/models/item/evilmushroom_spawn_egg.json",
           "src/main/java/net/mcreator/mariocraft/entity/model/EvilmushroomModel.java"
         ]
       }
@@ -366,8 +366,8 @@
       "registry_name": "rottenmushroom",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mario_craft/models/item/rottenmushroom.json",
-          "src/main/java/net/mcreator/mariocraft/item/RottenmushroomItem.java"
+          "src/main/java/net/mcreator/mariocraft/item/RottenmushroomItem.java",
+          "src/main/resources/assets/mario_craft/models/item/rottenmushroom.json"
         ]
       }
     },
@@ -428,6 +428,38 @@
             "name": "world",
             "type": "world"
           }
+        ]
+      }
+    },
+    {
+      "name": "PermanentMushroom",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "permanent_mushroom",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mariocraft/entity/PermanentMushroomEntity.java",
+          "src/main/java/net/mcreator/mariocraft/client/renderer/PermanentMushroomRenderer.java",
+          "src/main/resources/assets/mario_craft/models/item/permanent_mushroom_spawn_egg.json",
+          "src/main/resources/data/mario_craft/forge/biome_modifier/permanent_mushroom_biome_modifier.json",
+          "src/main/java/net/mcreator/mariocraft/entity/model/PermanentMushroomModel.java"
+        ]
+      }
+    },
+    {
+      "name": "PermanentEvilMushroom",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "permanent_evil_mushroom",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mario_craft/models/item/permanent_evil_mushroom_spawn_egg.json",
+          "src/main/java/net/mcreator/mariocraft/entity/PermanentEvilMushroomEntity.java",
+          "src/main/java/net/mcreator/mariocraft/entity/model/PermanentEvilMushroomModel.java",
+          "src/main/resources/data/mario_craft/forge/biome_modifier/permanent_evil_mushroom_biome_modifier.json",
+          "src/main/java/net/mcreator/mariocraft/client/renderer/PermanentEvilMushroomRenderer.java"
         ]
       }
     }
@@ -523,8 +555,8 @@
   "language_map": {
     "en_us": {
       "item.mario_craft.mushroom_spawn_egg": "Mushroom Spawn Egg",
-      "entity.mario_craft.coin": "Coin",
       "subtitles.toadsound2": "",
+      "entity.mario_craft.coin": "Coin",
       "item.mario_craft.mushrom_2": "Mushrom",
       "subtitles.boing": "",
       "subtitles.mushroomsound": "",
@@ -535,6 +567,8 @@
       "item.mario_craft.rottenmushroom": "Rotten Mushroom",
       "entity.mario_craft.mushroom": "Mushroom",
       "subtitles.coin_sound": "Coin Collected",
+      "item.mario_craft.permanent_mushroom_spawn_egg": "Permanent Mushroom Spawn Egg",
+      "entity.mario_craft.permanent_evil_mushroom": "Rotten mushroom",
       "block.mario_craft.question_mark": "Question Mark",
       "entity.mario_craft.toad": "Toad",
       "entity.mario_craft.purple_coin": "Purple Coin",
@@ -542,12 +576,14 @@
       "block.mario_craft.brick": "Mario Brick",
       "item.mario_craft.purple_coin_spawn_egg": "Purple Coin Spawn Egg",
       "item.mario_craft.coin_spawn_egg": "Coin Spawn Egg",
+      "item.mario_craft.permanent_evil_mushroom_spawn_egg": "Rotten mushroom Spawn Egg",
       "subtitles.toaddeathsound": "",
       "item.mario_craft.icon": "Icon",
       "subtitles.toadhurtsound": "",
       "subtitles.toadsound": "",
       "item_group.mario_craft.mario_tab": "Mario craft",
-      "block.mario_craft.question_mark_collected": "Question Mark Collected"
+      "block.mario_craft.question_mark_collected": "Question Mark Collected",
+      "entity.mario_craft.permanent_mushroom": "Permanent Mushroom"
     }
   },
   "foldersRoot": {

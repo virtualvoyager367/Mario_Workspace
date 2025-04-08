@@ -18,6 +18,8 @@ import net.minecraft.world.entity.Entity;
 
 import net.mcreator.mariocraft.entity.ToadEntity;
 import net.mcreator.mariocraft.entity.PurpleCoinEntity;
+import net.mcreator.mariocraft.entity.PermanentMushroomEntity;
+import net.mcreator.mariocraft.entity.PermanentEvilMushroomEntity;
 import net.mcreator.mariocraft.entity.MushroomEntity;
 import net.mcreator.mariocraft.entity.EvilmushroomEntity;
 import net.mcreator.mariocraft.entity.CoinEntity;
@@ -40,6 +42,13 @@ public class MarioCraftModEntities {
 			EntityType.Builder.<EvilmushroomEntity>of(EvilmushroomEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(EvilmushroomEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<PermanentMushroomEntity>> PERMANENT_MUSHROOM = register("permanent_mushroom", EntityType.Builder.<PermanentMushroomEntity>of(PermanentMushroomEntity::new, MobCategory.CREATURE)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PermanentMushroomEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<PermanentEvilMushroomEntity>> PERMANENT_EVIL_MUSHROOM = register("permanent_evil_mushroom",
+			EntityType.Builder.<PermanentEvilMushroomEntity>of(PermanentEvilMushroomEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+					.setCustomClientFactory(PermanentEvilMushroomEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -55,6 +64,8 @@ public class MarioCraftModEntities {
 			ToadEntity.init();
 			MushroomEntity.init();
 			EvilmushroomEntity.init();
+			PermanentMushroomEntity.init();
+			PermanentEvilMushroomEntity.init();
 		});
 	}
 
@@ -65,5 +76,7 @@ public class MarioCraftModEntities {
 		event.put(TOAD.get(), ToadEntity.createAttributes().build());
 		event.put(MUSHROOM.get(), MushroomEntity.createAttributes().build());
 		event.put(EVILMUSHROOM.get(), EvilmushroomEntity.createAttributes().build());
+		event.put(PERMANENT_MUSHROOM.get(), PermanentMushroomEntity.createAttributes().build());
+		event.put(PERMANENT_EVIL_MUSHROOM.get(), PermanentEvilMushroomEntity.createAttributes().build());
 	}
 }

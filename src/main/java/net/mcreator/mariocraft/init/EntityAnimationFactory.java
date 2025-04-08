@@ -6,6 +6,8 @@ import net.minecraftforge.event.entity.living.LivingEvent;
 
 import net.mcreator.mariocraft.entity.ToadEntity;
 import net.mcreator.mariocraft.entity.PurpleCoinEntity;
+import net.mcreator.mariocraft.entity.PermanentMushroomEntity;
+import net.mcreator.mariocraft.entity.PermanentEvilMushroomEntity;
 import net.mcreator.mariocraft.entity.MushroomEntity;
 import net.mcreator.mariocraft.entity.EvilmushroomEntity;
 import net.mcreator.mariocraft.entity.CoinEntity;
@@ -44,6 +46,20 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof EvilmushroomEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof PermanentMushroomEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof PermanentEvilMushroomEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

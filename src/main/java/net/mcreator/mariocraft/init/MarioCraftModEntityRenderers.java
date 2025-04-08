@@ -11,6 +11,8 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.mariocraft.client.renderer.ToadRenderer;
 import net.mcreator.mariocraft.client.renderer.PurpleCoinRenderer;
+import net.mcreator.mariocraft.client.renderer.PermanentMushroomRenderer;
+import net.mcreator.mariocraft.client.renderer.PermanentEvilMushroomRenderer;
 import net.mcreator.mariocraft.client.renderer.MushroomRenderer;
 import net.mcreator.mariocraft.client.renderer.EvilmushroomRenderer;
 import net.mcreator.mariocraft.client.renderer.CoinRenderer;
@@ -24,5 +26,7 @@ public class MarioCraftModEntityRenderers {
 		event.registerEntityRenderer(MarioCraftModEntities.TOAD.get(), ToadRenderer::new);
 		event.registerEntityRenderer(MarioCraftModEntities.MUSHROOM.get(), MushroomRenderer::new);
 		event.registerEntityRenderer(MarioCraftModEntities.EVILMUSHROOM.get(), EvilmushroomRenderer::new);
+		event.registerEntityRenderer(MarioCraftModEntities.PERMANENT_MUSHROOM.get(), PermanentMushroomRenderer::new);
+		event.registerEntityRenderer(MarioCraftModEntities.PERMANENT_EVIL_MUSHROOM.get(), PermanentEvilMushroomRenderer::new);
 	}
 }

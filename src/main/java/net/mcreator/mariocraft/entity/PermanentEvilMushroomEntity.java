@@ -59,21 +59,21 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.mariocraft.init.MarioCraftModEntities;
 
-public class EvilmushroomEntity extends Monster implements GeoEntity {
-	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(EvilmushroomEntity.class, EntityDataSerializers.BOOLEAN);
-	public static final EntityDataAccessor<String> ANIMATION = SynchedEntityData.defineId(EvilmushroomEntity.class, EntityDataSerializers.STRING);
-	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(EvilmushroomEntity.class, EntityDataSerializers.STRING);
+public class PermanentEvilMushroomEntity extends Monster implements GeoEntity {
+	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(PermanentEvilMushroomEntity.class, EntityDataSerializers.BOOLEAN);
+	public static final EntityDataAccessor<String> ANIMATION = SynchedEntityData.defineId(PermanentEvilMushroomEntity.class, EntityDataSerializers.STRING);
+	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(PermanentEvilMushroomEntity.class, EntityDataSerializers.STRING);
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 	private boolean swinging;
 	private boolean lastloop;
 	private long lastSwing;
 	public String animationprocedure = "empty";
 
-	public EvilmushroomEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(MarioCraftModEntities.EVILMUSHROOM.get(), world);
+	public PermanentEvilMushroomEntity(PlayMessages.SpawnEntity packet, Level world) {
+		this(MarioCraftModEntities.PERMANENT_EVIL_MUSHROOM.get(), world);
 	}
 
-	public EvilmushroomEntity(EntityType<EvilmushroomEntity> type, Level world) {
+	public PermanentEvilMushroomEntity(EntityType<PermanentEvilMushroomEntity> type, Level world) {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
@@ -207,7 +207,7 @@ public class EvilmushroomEntity extends Monster implements GeoEntity {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(MarioCraftModEntities.EVILMUSHROOM.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+		SpawnPlacements.register(MarioCraftModEntities.PERMANENT_EVIL_MUSHROOM.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
 				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL && Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
 	}
 
@@ -260,7 +260,7 @@ public class EvilmushroomEntity extends Monster implements GeoEntity {
 	protected void tickDeath() {
 		++this.deathTime;
 		if (this.deathTime == 1) {
-			this.remove(EvilmushroomEntity.RemovalReason.KILLED);
+			this.remove(PermanentEvilMushroomEntity.RemovalReason.KILLED);
 			this.dropExperience();
 		}
 	}

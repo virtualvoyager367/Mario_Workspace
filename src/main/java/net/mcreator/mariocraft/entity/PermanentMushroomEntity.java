@@ -17,36 +17,26 @@ import net.minecraftforge.network.NetworkHooks;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ThrownPotion;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
-import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
-import net.minecraft.world.entity.ai.goal.RestrictSunGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
-import net.minecraft.world.entity.ai.goal.MoveBackToVillageGoal;
-import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
-import net.minecraft.world.entity.ai.goal.FloatGoal;
-import net.minecraft.world.entity.ai.goal.BreakDoorGoal;
-import net.minecraft.world.entity.ai.goal.AvoidEntityGoal;
+import net.minecraft.world.entity.ai.goal.LookAtPlayerGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.Pose;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EntityDimensions;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.AreaEffectCloud;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.Difficulty;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.syncher.SynchedEntityData;
@@ -57,28 +47,28 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.mariocraft.procedures.MushroomCollisionProcedure;
 import net.mcreator.mariocraft.init.MarioCraftModEntities;
 
-public class EvilmushroomEntity extends Monster implements GeoEntity {
-	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(EvilmushroomEntity.class, EntityDataSerializers.BOOLEAN);
-	public static final EntityDataAccessor<String> ANIMATION = SynchedEntityData.defineId(EvilmushroomEntity.class, EntityDataSerializers.STRING);
-	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(EvilmushroomEntity.class, EntityDataSerializers.STRING);
+public class PermanentMushroomEntity extends Monster implements GeoEntity {
+	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(PermanentMushroomEntity.class, EntityDataSerializers.BOOLEAN);
+	public static final EntityDataAccessor<String> ANIMATION = SynchedEntityData.defineId(PermanentMushroomEntity.class, EntityDataSerializers.STRING);
+	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(PermanentMushroomEntity.class, EntityDataSerializers.STRING);
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 	private boolean swinging;
 	private boolean lastloop;
 	private long lastSwing;
 	public String animationprocedure = "empty";
 
-	public EvilmushroomEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(MarioCraftModEntities.EVILMUSHROOM.get(), world);
+	public PermanentMushroomEntity(PlayMessages.SpawnEntity packet, Level world) {
+		this(MarioCraftModEntities.PERMANENT_MUSHROOM.get(), world);
 	}
 
-	public EvilmushroomEntity(EntityType<EvilmushroomEntity> type, Level world) {
+	public PermanentMushroomEntity(EntityType<PermanentMushroomEntity> type, Level world) {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
 		setMaxUpStep(0.6f);
-		this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Items.LEATHER_BOOTS));
 	}
 
 	@Override
@@ -86,7 +76,7 @@ public class EvilmushroomEntity extends Monster implements GeoEntity {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "texture");
+		this.entityData.define(TEXTURE, "mario_mushroom");
 	}
 
 	public void setTexture(String texture) {
@@ -105,35 +95,14 @@ public class EvilmushroomEntity extends Monster implements GeoEntity {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new RestrictSunGoal(this));
-		this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.2, false) {
-			@Override
-			protected double getAttackReachSqr(LivingEntity entity) {
-				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
-			}
-		});
-		this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
-		this.goalSelector.addGoal(4, new RandomStrollGoal(this, 0.8));
-		this.goalSelector.addGoal(5, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(6, new MeleeAttackGoal(this, 1.2, false) {
-			@Override
-			protected double getAttackReachSqr(LivingEntity entity) {
-				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
-			}
-		});
-		this.goalSelector.addGoal(7, new RandomStrollGoal(this, 1));
-		this.targetSelector.addGoal(8, new HurtByTargetGoal(this).setAlertOthers());
-		this.goalSelector.addGoal(9, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(10, new FloatGoal(this));
-		this.goalSelector.addGoal(11, new AvoidEntityGoal<>(this, MushroomEntity.class, (float) 9, 1, 1.2));
-		this.goalSelector.addGoal(12, new MoveBackToVillageGoal(this, 0.6, false));
-		this.goalSelector.addGoal(13, new BreakDoorGoal(this, e -> true));
-		this.targetSelector.addGoal(14, new NearestAttackableTargetGoal(this, Player.class, false, false));
+		this.goalSelector.addGoal(1, new RandomStrollGoal(this, 0.8));
+		this.goalSelector.addGoal(2, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(3, new LookAtPlayerGoal(this, EvilmushroomEntity.class, (float) 9));
 	}
 
 	@Override
 	public MobType getMobType() {
-		return MobType.UNDEAD;
+		return MobType.UNDEFINED;
 	}
 
 	@Override
@@ -148,11 +117,13 @@ public class EvilmushroomEntity extends Monster implements GeoEntity {
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("mario_craft:mushroomsound"));
 	}
 
 	@Override
 	public boolean hurt(DamageSource source, float amount) {
+		if (source.is(DamageTypes.IN_FIRE))
+			return false;
 		if (source.getDirectEntity() instanceof AbstractArrow)
 			return false;
 		if (source.getDirectEntity() instanceof Player)
@@ -206,19 +177,37 @@ public class EvilmushroomEntity extends Monster implements GeoEntity {
 		return super.getDimensions(p_33597_).scale((float) 1);
 	}
 
+	@Override
+	public void playerTouch(Player sourceentity) {
+		super.playerTouch(sourceentity);
+		MushroomCollisionProcedure.execute(this.level(), this, sourceentity);
+	}
+
+	@Override
+	public boolean isPushable() {
+		return false;
+	}
+
+	@Override
+	protected void doPush(Entity entityIn) {
+	}
+
+	@Override
+	protected void pushEntities() {
+	}
+
 	public static void init() {
-		SpawnPlacements.register(MarioCraftModEntities.EVILMUSHROOM.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL && Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
+		SpawnPlacements.register(MarioCraftModEntities.PERMANENT_MUSHROOM.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+				(entityType, world, reason, pos, random) -> (world.getBlockState(pos.below()).is(BlockTags.ANIMALS_SPAWNABLE_ON) && world.getRawBrightness(pos, 0) > 8));
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
 		builder = builder.add(Attributes.MAX_HEALTH, 10);
-		builder = builder.add(Attributes.ARMOR, 0.3);
+		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
-		builder = builder.add(Attributes.FOLLOW_RANGE, 50);
-		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 0.5);
+		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
 		return builder;
 	}
 
@@ -260,7 +249,7 @@ public class EvilmushroomEntity extends Monster implements GeoEntity {
 	protected void tickDeath() {
 		++this.deathTime;
 		if (this.deathTime == 1) {
-			this.remove(EvilmushroomEntity.RemovalReason.KILLED);
+			this.remove(PermanentMushroomEntity.RemovalReason.KILLED);
 			this.dropExperience();
 		}
 	}
