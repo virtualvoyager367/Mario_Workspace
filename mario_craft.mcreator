@@ -400,7 +400,7 @@
     {
       "name": "MushroomDaylightSwap",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "mushroom_daylight_swap",
       "metadata": {
@@ -523,8 +523,8 @@
   "language_map": {
     "en_us": {
       "item.mario_craft.mushroom_spawn_egg": "Mushroom Spawn Egg",
-      "subtitles.toadsound2": "",
       "entity.mario_craft.coin": "Coin",
+      "subtitles.toadsound2": "",
       "item.mario_craft.mushrom_2": "Mushrom",
       "subtitles.boing": "",
       "subtitles.mushroomsound": "",
