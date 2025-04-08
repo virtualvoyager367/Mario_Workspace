@@ -57,6 +57,7 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.mariocraft.procedures.MushroomDaylightSwapProcedure;
 import net.mcreator.mariocraft.init.MarioCraftModEntities;
 
 public class EvilmushroomEntity extends Monster implements GeoEntity {
@@ -198,6 +199,7 @@ public class EvilmushroomEntity extends Monster implements GeoEntity {
 	@Override
 	public void baseTick() {
 		super.baseTick();
+		MushroomDaylightSwapProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
 		this.refreshDimensions();
 	}
 

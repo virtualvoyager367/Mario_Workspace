@@ -33,9 +33,9 @@ public class MarioCraftModItems {
 	public static final RegistryObject<Item> MUSHROM_2 = REGISTRY.register("mushrom_2", () -> new Mushrom2Item());
 	public static final RegistryObject<Item> EVILMUSHROOM_SPAWN_EGG = REGISTRY.register("evilmushroom_spawn_egg", () -> new ForgeSpawnEggItem(MarioCraftModEntities.EVILMUSHROOM, -10092442, -13421569, new Item.Properties()));
 	public static final RegistryObject<Item> ROTTENMUSHROOM = REGISTRY.register("rottenmushroom", () -> new RottenmushroomItem());
-	public static final RegistryObject<Item> PERMANENT_MUSHROOM_SPAWN_EGG = REGISTRY.register("permanent_mushroom_spawn_egg", () -> new ForgeSpawnEggItem(MarioCraftModEntities.PERMANENT_MUSHROOM, -1, -65536, new Item.Properties()));
+	public static final RegistryObject<Item> PERMANENT_MUSHROOM_SPAWN_EGG = REGISTRY.register("permanent_mushroom_spawn_egg", () -> new ForgeSpawnEggItem(MarioCraftModEntities.PERMANENT_MUSHROOM, -1, -13434880, new Item.Properties()));
 	public static final RegistryObject<Item> PERMANENT_EVIL_MUSHROOM_SPAWN_EGG = REGISTRY.register("permanent_evil_mushroom_spawn_egg",
-			() -> new ForgeSpawnEggItem(MarioCraftModEntities.PERMANENT_EVIL_MUSHROOM, -10092442, -13421569, new Item.Properties()));
+			() -> new ForgeSpawnEggItem(MarioCraftModEntities.PERMANENT_EVIL_MUSHROOM, -13434829, -13421569, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

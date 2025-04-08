@@ -351,9 +351,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/mariocraft/client/renderer/EvilmushroomRenderer.java",
-          "src/main/resources/assets/mario_craft/models/item/evilmushroom_spawn_egg.json",
           "src/main/resources/data/mario_craft/forge/biome_modifier/evilmushroom_biome_modifier.json",
           "src/main/java/net/mcreator/mariocraft/entity/EvilmushroomEntity.java",
+          "src/main/resources/assets/mario_craft/models/item/evilmushroom_spawn_egg.json",
           "src/main/java/net/mcreator/mariocraft/entity/model/EvilmushroomModel.java"
         ]
       }
@@ -442,7 +442,6 @@
           "src/main/java/net/mcreator/mariocraft/entity/PermanentMushroomEntity.java",
           "src/main/java/net/mcreator/mariocraft/client/renderer/PermanentMushroomRenderer.java",
           "src/main/resources/assets/mario_craft/models/item/permanent_mushroom_spawn_egg.json",
-          "src/main/resources/data/mario_craft/forge/biome_modifier/permanent_mushroom_biome_modifier.json",
           "src/main/java/net/mcreator/mariocraft/entity/model/PermanentMushroomModel.java"
         ]
       }
@@ -458,7 +457,6 @@
           "src/main/resources/assets/mario_craft/models/item/permanent_evil_mushroom_spawn_egg.json",
           "src/main/java/net/mcreator/mariocraft/entity/PermanentEvilMushroomEntity.java",
           "src/main/java/net/mcreator/mariocraft/entity/model/PermanentEvilMushroomModel.java",
-          "src/main/resources/data/mario_craft/forge/biome_modifier/permanent_evil_mushroom_biome_modifier.json",
           "src/main/java/net/mcreator/mariocraft/client/renderer/PermanentEvilMushroomRenderer.java"
         ]
       }
@@ -555,8 +553,8 @@
   "language_map": {
     "en_us": {
       "item.mario_craft.mushroom_spawn_egg": "Mushroom Spawn Egg",
-      "entity.mario_craft.coin": "Coin",
       "subtitles.toadsound2": "",
+      "entity.mario_craft.coin": "Coin",
       "item.mario_craft.mushrom_2": "Mushrom 2",
       "subtitles.boing": "",
       "subtitles.mushroomsound": "",
