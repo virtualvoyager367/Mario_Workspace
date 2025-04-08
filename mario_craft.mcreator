@@ -489,8 +489,8 @@
   "language_map": {
     "en_us": {
       "item.mario_craft.mushroom_spawn_egg": "Mushroom Spawn Egg",
-      "entity.mario_craft.coin": "Coin",
       "subtitles.toadsound2": "",
+      "entity.mario_craft.coin": "Coin",
       "item.mario_craft.mushrom_2": "Mushrom 2",
       "subtitles.boing": "",
       "subtitles.mushroomsound": "",
