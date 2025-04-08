@@ -2,7 +2,7 @@
   "_fv": 73,
   "_type": "animatedentity",
   "definition": {
-    "mobName": "Rotten mushroom",
+    "mobName": "Permanent rotten mushroom",
     "mobLabel": "",
     "mobModelTexture": "texture.png",
     "mobModelGlowTexture": "",
