@@ -7,9 +7,13 @@
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Rottenmushroom",
-    "rarity": "COMMON",
-    "creativeTabs": [],
+    "name": "Rotten Mushroom",
+    "rarity": "RARE",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:MarioTab"
+      }
+    ],
     "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,

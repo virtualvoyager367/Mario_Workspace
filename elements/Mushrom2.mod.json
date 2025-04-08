@@ -7,9 +7,13 @@
     "customModelName": "Tool",
     "customProperties": {},
     "states": [],
-    "name": "Mushrom 2",
-    "rarity": "COMMON",
-    "creativeTabs": [],
+    "name": "Mushrom",
+    "rarity": "UNCOMMON",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:MarioTab"
+      }
+    ],
     "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,
@@ -39,13 +43,13 @@
       "value": "Arrow"
     },
     "projectileDisableAmmoCheck": false,
-    "isFood": false,
-    "nutritionalValue": 4,
-    "saturation": 0.3,
+    "isFood": true,
+    "nutritionalValue": 20,
+    "saturation": 0.1,
     "eatResultItem": {
       "value": ""
     },
-    "isMeat": false,
+    "isMeat": true,
     "isAlwaysEdible": false,
     "animation": "none",
     "isMusicDisc": false,

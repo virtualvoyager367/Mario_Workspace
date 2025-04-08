@@ -351,9 +351,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/mariocraft/client/renderer/EvilmushroomRenderer.java",
+          "src/main/resources/assets/mario_craft/models/item/evilmushroom_spawn_egg.json",
           "src/main/resources/data/mario_craft/forge/biome_modifier/evilmushroom_biome_modifier.json",
           "src/main/java/net/mcreator/mariocraft/entity/EvilmushroomEntity.java",
-          "src/main/resources/assets/mario_craft/models/item/evilmushroom_spawn_egg.json",
           "src/main/java/net/mcreator/mariocraft/entity/model/EvilmushroomModel.java"
         ]
       }
@@ -366,8 +366,8 @@
       "registry_name": "rottenmushroom",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mariocraft/item/RottenmushroomItem.java",
-          "src/main/resources/assets/mario_craft/models/item/rottenmushroom.json"
+          "src/main/resources/assets/mario_craft/models/item/rottenmushroom.json",
+          "src/main/java/net/mcreator/mariocraft/item/RottenmushroomItem.java"
         ]
       }
     },
@@ -389,6 +389,40 @@
           {
             "name": "sourceentity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MushroomDaylightSwap",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_daylight_swap",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mariocraft/procedures/MushroomDaylightSwapProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
           },
           {
             "name": "world",
@@ -489,16 +523,16 @@
   "language_map": {
     "en_us": {
       "item.mario_craft.mushroom_spawn_egg": "Mushroom Spawn Egg",
-      "entity.mario_craft.coin": "Coin",
       "subtitles.toadsound2": "",
-      "item.mario_craft.mushrom_2": "Mushrom 2",
+      "entity.mario_craft.coin": "Coin",
+      "item.mario_craft.mushrom_2": "Mushrom",
       "subtitles.boing": "",
       "subtitles.mushroomsound": "",
       "entity.mario_craft.evilmushroom": "Rotten mushroom",
       "block.mario_craft.pipe": "Pipe",
       "item.mario_craft.evilmushroom_spawn_egg": "Rotten mushroom Spawn Egg",
       "subtitles.boing1": "",
-      "item.mario_craft.rottenmushroom": "Rottenmushroom",
+      "item.mario_craft.rottenmushroom": "Rotten Mushroom",
       "entity.mario_craft.mushroom": "Mushroom",
       "subtitles.coin_sound": "Coin Collected",
       "block.mario_craft.question_mark": "Question Mark",
