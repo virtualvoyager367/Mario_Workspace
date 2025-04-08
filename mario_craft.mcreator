@@ -430,6 +430,38 @@
           }
         ]
       }
+    },
+    {
+      "name": "PermanentMushroom",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "permanent_mushroom",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mariocraft/entity/PermanentMushroomEntity.java",
+          "src/main/java/net/mcreator/mariocraft/client/renderer/PermanentMushroomRenderer.java",
+          "src/main/resources/data/mario_craft/forge/biome_modifier/permanent_mushroom_biome_modifier.json",
+          "src/main/java/net/mcreator/mariocraft/entity/model/PermanentMushroomModel.java",
+          "src/main/resources/assets/mario_craft/models/item/permanent_mushroom_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "PermanentEvilMushroom",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "permanent_evil_mushroom",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mariocraft/client/renderer/PermanentEvilMushroomRenderer.java",
+          "src/main/resources/assets/mario_craft/models/item/permanent_evil_mushroom_spawn_egg.json",
+          "src/main/java/net/mcreator/mariocraft/entity/PermanentEvilMushroomEntity.java",
+          "src/main/java/net/mcreator/mariocraft/entity/model/PermanentEvilMushroomModel.java",
+          "src/main/resources/data/mario_craft/forge/biome_modifier/permanent_evil_mushroom_biome_modifier.json"
+        ]
+      }
     }
   ],
   "variable_elements": [

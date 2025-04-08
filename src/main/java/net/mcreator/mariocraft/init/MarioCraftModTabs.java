@@ -25,8 +25,9 @@ public class MarioCraftModTabs {
 				tabData.accept(MarioCraftModItems.PURPLE_COIN_SPAWN_EGG.get());
 				tabData.accept(MarioCraftModItems.TOAD_SPAWN_EGG.get());
 				tabData.accept(MarioCraftModItems.MUSHROOM_SPAWN_EGG.get());
-				tabData.accept(MarioCraftModItems.MUSHROM_2.get());
 				tabData.accept(MarioCraftModItems.EVILMUSHROOM_SPAWN_EGG.get());
 				tabData.accept(MarioCraftModItems.ROTTENMUSHROOM.get());
+				tabData.accept(MarioCraftModItems.PERMANENT_MUSHROOM_SPAWN_EGG.get());
+				tabData.accept(MarioCraftModItems.PERMANENT_EVIL_MUSHROOM_SPAWN_EGG.get());
 			}).build());
 }
