@@ -523,9 +523,9 @@
   "language_map": {
     "en_us": {
       "item.mario_craft.mushroom_spawn_egg": "Mushroom Spawn Egg",
-      "subtitles.toadsound2": "",
       "entity.mario_craft.coin": "Coin",
-      "item.mario_craft.mushrom_2": "Mushrom",
+      "subtitles.toadsound2": "",
+      "item.mario_craft.mushrom_2": "Mushroom",
       "subtitles.boing": "",
       "subtitles.mushroomsound": "",
       "entity.mario_craft.evilmushroom": "Rotten mushroom",
