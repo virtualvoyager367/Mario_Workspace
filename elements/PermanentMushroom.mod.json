@@ -24,7 +24,7 @@
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -65536,
+      "value": -13434880,
       "falpha": 0.0
     },
     "creativeTabs": [
@@ -106,7 +106,7 @@
     "raidCelebrationSound": {
       "value": ""
     },
-    "onPlayerCollidesWith": {
+    "onRightClickedOn": {
       "name": "MushroomCollision"
     },
     "hasAI": true,
@@ -157,7 +157,7 @@
       4,
       2
     ],
-    "spawnThisMob": true,
+    "spawnThisMob": false,
     "doesDespawnWhenIdle": true,
     "spawningProbability": 20,
     "mobSpawningType": "creature",
