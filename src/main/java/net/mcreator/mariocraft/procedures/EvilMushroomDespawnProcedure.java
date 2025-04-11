@@ -26,7 +26,7 @@ public class EvilMushroomDespawnProcedure {
 	private static void execute(@Nullable Event event, Entity sourceentity) {
 		if (sourceentity == null)
 			return;
-		if ((ForgeRegistries.ENTITY_TYPES.getKey(sourceentity.getType()).toString()).equals("mario_craft:evilmushroom") || (ForgeRegistries.ENTITY_TYPES.getKey(sourceentity.getType()).toString()).equals("mario_craft:permanentevilmushroom")) {
+		if ((ForgeRegistries.ENTITY_TYPES.getKey(sourceentity.getType()).toString()).equals("mario_craft:evilmushroom") || (ForgeRegistries.ENTITY_TYPES.getKey(sourceentity.getType()).toString()).equals("mario_craft:permanent_evil_mushroom")) {
 			if (!sourceentity.level().isClientSide())
 				sourceentity.discard();
 		}
