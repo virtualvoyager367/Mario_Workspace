@@ -321,10 +321,10 @@
       "registry_name": "mushroom",
       "metadata": {
         "files": [
+          "src/main/resources/data/mario_craft/forge/biome_modifier/mushroom_biome_modifier.json",
           "src/main/java/net/mcreator/mariocraft/entity/MushroomEntity.java",
           "src/main/java/net/mcreator/mariocraft/entity/model/MushroomModel.java",
           "src/main/java/net/mcreator/mariocraft/client/renderer/MushroomRenderer.java",
-          "src/main/resources/data/mario_craft/forge/biome_modifier/mushroom_biome_modifier.json",
           "src/main/resources/assets/mario_craft/models/item/mushroom_spawn_egg.json"
         ]
       }

@@ -106,11 +106,11 @@
     "raidCelebrationSound": {
       "value": ""
     },
-    "onRightClickedOn": {
-      "name": "MushroomCollision"
-    },
     "onMobTickUpdate": {
       "name": "MushroomDaylightSwap"
+    },
+    "onPlayerCollidesWith": {
+      "name": "MushroomCollision"
     },
     "hasAI": true,
     "aiBase": "(none)",
