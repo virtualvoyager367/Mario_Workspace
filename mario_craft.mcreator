@@ -557,7 +557,7 @@
       "item.mario_craft.mushroom_spawn_egg": "Mushroom Spawn Egg",
       "entity.mario_craft.coin": "Coin",
       "subtitles.toadsound2": "",
-      "item.mario_craft.mushrom_2": "Mushroom",
+      "item.mario_craft.mushrom_2": "Mushrom 2",
       "subtitles.boing": "",
       "subtitles.mushroomsound": "",
       "entity.mario_craft.evilmushroom": "Rotten mushroom",
@@ -567,6 +567,8 @@
       "item.mario_craft.rottenmushroom": "Rotten Mushroom",
       "entity.mario_craft.mushroom": "Mushroom",
       "subtitles.coin_sound": "Coin Collected",
+      "item.mario_craft.permanent_mushroom_spawn_egg": "Permanent Mushroom Spawn Egg",
+      "entity.mario_craft.permanent_evil_mushroom": "Permanent rotten mushroom",
       "block.mario_craft.question_mark": "Question Mark",
       "entity.mario_craft.toad": "Toad",
       "entity.mario_craft.purple_coin": "Purple Coin",
@@ -574,12 +576,14 @@
       "block.mario_craft.brick": "Mario Brick",
       "item.mario_craft.purple_coin_spawn_egg": "Purple Coin Spawn Egg",
       "item.mario_craft.coin_spawn_egg": "Coin Spawn Egg",
+      "item.mario_craft.permanent_evil_mushroom_spawn_egg": "Permanent rotten mushroom Spawn Egg",
       "subtitles.toaddeathsound": "",
       "item.mario_craft.icon": "Icon",
       "subtitles.toadhurtsound": "",
       "subtitles.toadsound": "",
       "item_group.mario_craft.mario_tab": "Mario craft",
-      "block.mario_craft.question_mark_collected": "Question Mark Collected"
+      "block.mario_craft.question_mark_collected": "Question Mark Collected",
+      "entity.mario_craft.permanent_mushroom": "Permanent Mushroom"
     }
   },
   "foldersRoot": {
