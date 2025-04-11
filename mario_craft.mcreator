@@ -460,6 +460,24 @@
           "src/main/java/net/mcreator/mariocraft/client/renderer/PermanentEvilMushroomRenderer.java"
         ]
       }
+    },
+    {
+      "name": "EvilMushroomDespawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "evil_mushroom_despawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mariocraft/procedures/EvilMushroomDespawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
