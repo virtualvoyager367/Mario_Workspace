@@ -359,19 +359,6 @@
       }
     },
     {
-      "name": "Rottenmushroom",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "rottenmushroom",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/mario_craft/models/item/rottenmushroom.json",
-          "src/main/java/net/mcreator/mariocraft/item/RottenmushroomItem.java"
-        ]
-      }
-    },
-    {
       "name": "MushroomCollision",
       "type": "procedure",
       "compiles": true,
@@ -592,7 +579,6 @@
       "block.mario_craft.pipe": "Pipe",
       "item.mario_craft.evilmushroom_spawn_egg": "Rotten mushroom Spawn Egg",
       "subtitles.boing1": "",
-      "item.mario_craft.rottenmushroom": "Rotten Mushroom",
       "entity.mario_craft.mushroom": "Mushroom",
       "subtitles.coin_sound": "Coin Collected",
       "item.mario_craft.permanent_mushroom_spawn_egg": "Permanent Mushroom Spawn Egg",
