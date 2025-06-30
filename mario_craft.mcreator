@@ -477,6 +477,20 @@
           "src/main/resources/data/mario_craft/recipes/crafting_table.json"
         ]
       }
+    },
+    {
+      "name": "Bloks",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bloks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mario_craft/worldgen/template_pool/bloks.json",
+          "src/main/resources/data/mario_craft/worldgen/structure_set/bloks.json",
+          "src/main/resources/data/mario_craft/worldgen/structure/bloks.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
