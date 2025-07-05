@@ -182,7 +182,7 @@ public class MushroomEntity extends Monster implements GeoEntity {
 	@Override
 	public void playerTouch(Player sourceentity) {
 		super.playerTouch(sourceentity);
-		MushroomCollisionProcedure.execute(this.level(), this, sourceentity);
+		MushroomCollisionProcedure.execute(this.level(), this);
 	}
 
 	@Override

@@ -27,11 +27,7 @@
       "value": -65536,
       "falpha": 0.0
     },
-    "creativeTabs": [
-      {
-        "value": "CUSTOM:MarioTab"
-      }
-    ],
+    "creativeTabs": [],
     "isBoss": false,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",

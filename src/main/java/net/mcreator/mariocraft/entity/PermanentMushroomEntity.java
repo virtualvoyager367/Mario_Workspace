@@ -177,7 +177,7 @@ public class PermanentMushroomEntity extends Monster implements GeoEntity {
 		Entity entity = this;
 		Level world = this.level();
 
-		MushroomCollisionProcedure.execute(world, entity, sourceentity);
+		MushroomCollisionProcedure.execute(world, entity);
 		return retval;
 	}
 

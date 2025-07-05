@@ -18,13 +18,11 @@ public class MarioCraftModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MarioCraftMod.MODID);
 	public static final RegistryObject<CreativeModeTab> MARIO_TAB = REGISTRY.register("mario_tab",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.mario_craft.mario_tab")).icon(() -> new ItemStack(MarioCraftModItems.ICON.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(MarioCraftModBlocks.PIPE.get().asItem());
 				tabData.accept(MarioCraftModBlocks.QUESTION_MARK.get().asItem());
 				tabData.accept(MarioCraftModItems.COIN_SPAWN_EGG.get());
 				tabData.accept(MarioCraftModBlocks.BRICK.get().asItem());
 				tabData.accept(MarioCraftModItems.PURPLE_COIN_SPAWN_EGG.get());
 				tabData.accept(MarioCraftModItems.TOAD_SPAWN_EGG.get());
-				tabData.accept(MarioCraftModItems.MUSHROOM_SPAWN_EGG.get());
 				tabData.accept(MarioCraftModItems.EVILMUSHROOM_SPAWN_EGG.get());
 				tabData.accept(MarioCraftModItems.PERMANENT_MUSHROOM_SPAWN_EGG.get());
 				tabData.accept(MarioCraftModItems.PERMANENT_EVIL_MUSHROOM_SPAWN_EGG.get());
