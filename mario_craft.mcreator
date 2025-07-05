@@ -450,6 +450,18 @@
           "src/main/resources/data/mario_craft/worldgen/template_pool/bloks.json"
         ]
       }
+    },
+    {
+      "name": "Thee",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thee",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mario_craft/recipes/crafting.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
